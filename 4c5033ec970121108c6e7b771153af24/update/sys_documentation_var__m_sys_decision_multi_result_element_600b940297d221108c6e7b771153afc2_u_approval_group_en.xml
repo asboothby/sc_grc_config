@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_approval_group" label="Approval Group" language="en" table="var__m_sys_decision_multi_result_element_600b940297d221108c6e7b771153afc2">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_approval_group</element>
+            <help/>
+            <hint/>
+            <label>Approval Group</label>
+            <language>en</language>
+            <name>var__m_sys_decision_multi_result_element_600b940297d221108c6e7b771153afc2</name>
+            <plural>Approval Group</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-04-20 16:20:22</sys_created_on>
+            <sys_id>3df5688e97d221108c6e7b771153afcd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Approval Group</sys_name>
+            <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_decision_multi_result_element_600b940297d221108c6e7b771153afc2_u_approval_group_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-04-20 16:20:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

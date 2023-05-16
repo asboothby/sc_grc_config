@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sn_compliance_control</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sn_compliance_control">attestation=d0f1f327979021108c6e7b771153af58^stateCHANGESTOreview^EQ<item display_table="asmt_metric_type" display_value="LM Enterprise Services" endquery="false" field="attestation" goto="false" newquery="false" operator="=" or="false" value="d0f1f327979021108c6e7b771153af58"/>
+            <item display_value="Review" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="review"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set Auto-answered Control to Attest</name>
+        <order>302</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	gs.info('set auto answer to attest - current.content: ' + current.content);
+	gs.addInfoMessage('set auto answer to attest');
+	var gsAutoAnswr = new GlideRecord('x_631631_sc_grc_co_autoanswer_matrix');
+	gsAutoAnswr.addQuery('ent_svc_metric_type',current.content);
+	gsAutoAnswr.query();
+	if(gsAutoAnswr.hasNext()) gs.info('auto answer matrix record found');
+	while(gsAutoAnswr.next())
+	{
+// 		var entSvcCtrlId = gsAutoAnswr.ent_svc_metric_type;
+		var controlId = gsAutoAnswr.assessment_control_type;
+
+		gsControl = new GlideRecord('sn_compliance_control');
+		gsControl.addQuery('profile',current.profile);
+		gsControl.addQuery('content',controlId);
+		gsControl.query();
+		if(gsControl.next())
+		{
+			gsControl.state = 'attest';
+			gsControl.update();
+		}
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-02 19:31:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f25fbe39972a21108c6e7b771153af00</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Set Auto-answered Control to Attest</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_f25fbe39972a21108c6e7b771153af00</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-03 10:11:08</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f25fbe39972a21108c6e7b771153af00"/>
+</record_update>

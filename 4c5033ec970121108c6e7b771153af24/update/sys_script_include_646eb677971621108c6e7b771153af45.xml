@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_sc_grc_co.grcAssessmentUtilBase</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>grcAssessmentUtilBase</name>
+        <script><![CDATA[var grcAssessmentUtilBase = Class.create();
+grcAssessmentUtilBase.prototype = {
+    initialize: function() {
+    },
+
+	
+	autoAnswerControl: function(controlAsmtQId)
+	{
+		gs.info('si - here');
+		gs.info('param: ' + controlAsmtQId);
+		var grAsmtInstQ = new GlideRecord('asmt_assessment_instance_question');
+		grAsmtInstQ.get(controlAsmtQId);
+		if(grAsmtInstQ)
+		{
+			var asmtInstanceId = grAsmtInstQ.instance;
+			var gsControl = new GlideRecord('sn_compliance_control'); 
+			gsControl.get(grAsmtInstQ.source_id);
+			if(gsControl)
+			{
+// 				gs.addInfoMessage(gsControl.profile.name);
+				var entityId = gsControl.profile;
+				var ctrlObjId = gsControl.content;
+
+				var gsCtrlObj = new GlideRecord('sn_compliance_policy_statement');
+				gsCtrlObj.get(ctrlObjId);
+
+				if(gsCtrlObj)
+				{
+					//gs.addInfoMessage('Control Obj: ' + gsCtrlObj.name + ' - ' + ctrlObjId );
+
+					var gsAutoAnswr = new GlideRecord('x_631631_sc_grc_co_autoanswer_matrix');
+					gsAutoAnswr.addQuery('assessment_control_type',ctrlObjId);
+					gsAutoAnswr.query();
+					while(gsAutoAnswr.next())
+					{
+						//gs.addInfoMessage('Ent Ctrl: ' + gsAutoAnswr.ent_svc_metric_type);
+						var entSvcCtrlId = gsAutoAnswr.ent_svc_metric_type;
+
+						gsControl = new GlideRecord('sn_compliance_control');
+						gsControl.addQuery('profile',entityId);
+						gsControl.addQuery('content','aadadcf8977311108c6e7b771153af09');
+						gsControl.query();
+						if(gsControl.next())
+						{
+							//gs.addInfoMessage('Ent Svc: ' + gsControl.name);
+							var gsEntSvcQ = new GlideRecord('asmt_assessment_instance_question');
+							gsEntSvcQ.addQuery('source_id', gsControl.sys_id);
+							gsEntSvcQ.query();
+
+							if(gsEntSvcQ.next())
+							{
+// 								gs.addInfoMessage('string val: ' + gsEntSvcQ.string_value);
+								if(gsEntSvcQ.value==1)
+								{
+									grAsmtInstQ.value=1;
+									grAsmtInstQ.update();
+									var grExplain = new GlideRecord('asmt_assessment_instance_question');
+									grExplain.addQuery('instance', asmtInstanceId);
+									grExplain.addQuery('metric', '53681152df101200dca6a5f59bf263f1');
+									grExplain.query();
+									if(grExplain.next())
+									{
+// 										gs.addInfoMessage(grExplain.metric.name);
+										grExplain.string_value = 'Response set because enterprise control/service is used';
+										grExplain.value = 0;
+										grExplain.update();
+
+										var grInstance = new GlideRecord('asmt_assessment_instance');
+										grInstance.get(asmtInstanceId);
+										if(grInstance)
+										{
+// 											grInstance.state = 'complete';
+// 											grInstance.update();
+										}
+									}
+								}   
+							}
+						}
+					}
+
+				}
+			}
+			else
+			{
+				gs.addInfoMessage('control undefined');
+			}
+		}
+		else
+		{
+			gs.addInfoMessage('undefined');
+		}
+
+	},
+	
+    type: 'grcAssessmentUtilBase'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-26 13:56:16</sys_created_on>
+        <sys_id>646eb677971621108c6e7b771153af45</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>grcAssessmentUtilBase</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_include_646eb677971621108c6e7b771153af45</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-04 19:24:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

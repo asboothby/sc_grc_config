@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="BA Approval Group">600b940297d221108c6e7b771153afc2</decision_table>
+        <label>Approval Group: IROC</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 15:20:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5aefc5b975621108c6e7b771153affe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Group: IROC</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_decision_multi_result_e5aefc5b975621108c6e7b771153affe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 15:20:38</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=e5aefc5b975621108c6e7b771153affe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>e5aefc5b975621108c6e7b771153affe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-24 15:20:38</sys_created_on>
+        <sys_id>f1ae309b975621108c6e7b771153af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-24 15:20:38</sys_updated_on>
+        <value>779d741f97d221108c6e7b771153afb8</value>
+        <variable display_value="Approval Group">79f5688e97d221108c6e7b771153afbd</variable>
+    </sys_variable_value>
+</record_update>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>56f5a88e97d221108c6e7b771153af1c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>c7c7a4ce97d221108c6e7b771153affb</answer>
+        <condition table="var__m_sys_decision_input_600b940297d221108c6e7b771153afc2">u_company.name=ACME Corporation^EQ<item endquery="false" field="u_company.name" goto="false" newquery="false" operator="=" or="false" value="ACME Corporation"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="BA Approval Group">600b940297d221108c6e7b771153afc2</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_600b940297d221108c6e7b771153afc2</input_table>
+        <label>BA Approval Group_400</label>
+        <order>400</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:20:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>56f5a88e97d221108c6e7b771153af1c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BA Approval Group_400</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_decision_question_56f5a88e97d221108c6e7b771153af1c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 16:28:24</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:20:24</sys_created_on>
+        <sys_id>5af5a88e97d221108c6e7b771153af1c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BA Approval Group_400</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_metadata_link_5af5a88e97d221108c6e7b771153af1c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 16:28:24</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="DELETE">
+        <decision_table display_value="BA Approval Group">600b940297d221108c6e7b771153afc2</decision_table>
+        <label>Approval Group: Risk Managers</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:28:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>17c7a402971621108c6e7b771153afdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Group: Risk Managers</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_decision_multi_result_17c7a402971621108c6e7b771153afdb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 16:28:23</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="DELETE" query="document_key=17c7a402971621108c6e7b771153afdb"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>17c7a402971621108c6e7b771153afdb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:28:23</sys_created_on>
+        <sys_id>1bc7a402971621108c6e7b771153afdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 16:28:23</sys_updated_on>
+        <value>2e6ba5d053c103003b638e56a11c0842</value>
+        <variable display_value="Approval Group">79f5688e97d221108c6e7b771153afbd</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_decision_multi_result_17c7a402971621108c6e7b771153afdb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result"><sys_decision_multi_result action="INSERT_OR_UPDATE"><decision_table display_value="BA Approval Group">600b940297d221108c6e7b771153afc2</decision_table><label>Approval Group: Risk Managers</label><result_elements/><sys_class_name>sys_decision_multi_result</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-20 16:28:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>17c7a402971621108c6e7b771153afdb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Approval Group: Risk Managers</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sys_decision_multi_result_17c7a402971621108c6e7b771153afdb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-20 16:28:23</sys_updated_on></sys_decision_multi_result><sys_variable_value action="delete_multiple" query="document_key=17c7a402971621108c6e7b771153afdb"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>17c7a402971621108c6e7b771153afdb</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-04-20 16:28:23</sys_created_on><sys_id>1bc7a402971621108c6e7b771153afdb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-04-20 16:28:23</sys_updated_on><value>2e6ba5d053c103003b638e56a11c0842</value><variable display_value="Approval Group">79f5688e97d221108c6e7b771153afbd</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-927052021</payload_hash>
+        <record_name>Approval Group: Risk Managers</record_name>
+        <reverted_from/>
+        <source>00507728974121108c6e7b771153afbe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:28:23</sys_created_on>
+        <sys_id>93c7a402971621108c6e7b771153afdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1879f7ed9f50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 16:28:23</sys_updated_on>
+        <type>Decision Table Multiple Result</type>
+        <update_guid>dbc7a402dd16211002c2d9cae92b9bdc</update_guid>
+        <update_guid_history>dbc7a402dd16211002c2d9cae92b9bdc:-927052021</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-25 09:21:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_multi_result">sys_decision_multi_result</sys_db_object>
+        <sys_id>0a1cb90ce58e4cc4806c388cb868c381</sys_id>
+        <sys_metadata>17c7a402971621108c6e7b771153afdb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Group: Risk Managers</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_decision_multi_result_17c7a402971621108c6e7b771153afdb</sys_update_name>
+        <sys_update_version display_value="sys_decision_multi_result_17c7a402971621108c6e7b771153afdb">93c7a402971621108c6e7b771153afdd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-25 09:21:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

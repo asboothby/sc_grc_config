@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="INSERT_OR_UPDATE">
+        <decision_input display_value="Company">f5f56c8a97d221108c6e7b771153afd3</decision_input>
+        <decision_table display_value="BA Approval Group">600b940297d221108c6e7b771153afc2</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field>u_company.name</field>
+        <field_label>Company &gt; Name</field_label>
+        <field_parent_table>core_company</field_parent_table>
+        <label>Company</label>
+        <order>100</order>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:20:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c6f5648697d221108c6e7b771153afae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_c6f5648697d221108c6e7b771153afae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 16:20:23</sys_updated_on>
+        <type display_value="String">747127c1bf3320001875647fcf0739e0</type>
+    </sn_decision_table_decision_condition>
+</record_update>

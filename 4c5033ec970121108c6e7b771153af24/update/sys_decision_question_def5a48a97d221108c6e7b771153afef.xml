@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>1fc7e4ce97d221108c6e7b771153af00</answer>
+        <condition table="var__m_sys_decision_input_600b940297d221108c6e7b771153afc2">u_company.name=ACME Americas^EQ<item endquery="false" field="u_company.name" goto="false" newquery="false" operator="=" or="false" value="ACME Americas"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="BA Approval Group">600b940297d221108c6e7b771153afc2</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_600b940297d221108c6e7b771153afc2</input_table>
+        <label>BA Approval Group_200</label>
+        <order>200</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:20:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>def5a48a97d221108c6e7b771153afef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>BA Approval Group_200</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_decision_question_def5a48a97d221108c6e7b771153afef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-20 16:28:23</sys_updated_on>
+    </sys_decision_question>
+</record_update>

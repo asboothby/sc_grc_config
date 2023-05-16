@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="AutoAnswer Matrix" max_length="40" name="x_631631_sc_grc_co_autoanswer_matrix" sizeclass="3" type="collection">
+        <element label="Assessment Control Type" max_length="32" name="assessment_control_type" reference="sn_compliance_policy_statement" type="reference"/>
+        <element label="Ent Svc Metric Type" mandatory="true" max_length="32" name="ent_svc_metric_type" reference="sn_compliance_policy_statement" type="reference"/>
+        <index name="index">
+            <element name="ent_svc_metric_type"/>
+        </index>
+        <index name="index2">
+            <element name="assessment_control_type"/>
+        </index>
+    </element>
+</database>

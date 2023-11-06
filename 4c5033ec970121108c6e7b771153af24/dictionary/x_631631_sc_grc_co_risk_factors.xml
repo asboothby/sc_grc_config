@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="254cd918970031108c6e7b771153af2e" label="Risk Factors" max_length="40" name="x_631631_sc_grc_co_risk_factors" type="collection">
+        <element label="Entity" max_length="32" name="entity" reference="sn_grc_profile" type="reference"/>
+        <element label="Externally Facing" max_length="40" name="externally_facing" type="boolean"/>
+        <element default="0" label="High Critical Vulnerabilities" max_length="40" name="high_critical_vulnerabilities" type="integer"/>
+        <element default="0" label="Non-Compliant Controls" max_length="40" name="non_compliant_controls" type="integer"/>
+        <element label="No Logging" max_length="40" name="no_logging" type="boolean"/>
+        <element label="No MFA" max_length="40" name="no_mfa" type="boolean"/>
+        <element default="0" label="Open Risks" max_length="40" name="open_risks" type="integer"/>
+        <element label="Sensitive Data" max_length="40" name="sensitive_data" type="boolean"/>
+        <element default="0" label="Total Vulnerabilities" max_length="40" name="total_vulnerabilities" type="integer"/>
+        <index name="index">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>

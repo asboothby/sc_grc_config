@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_breakdown_mappings">
+    <pa_breakdown_mappings action="INSERT_OR_UPDATE">
+        <breakdown display_value="RiskFactors.Daily">33352190974031108c6e7b771153afc5</breakdown>
+        <facts_table>x_631631_sc_grc_co_risk_factors</facts_table>
+        <field>entity.sys_id</field>
+        <script/>
+        <scripted>false</scripted>
+        <sys_class_name>pa_breakdown_mappings</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-11 11:10:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6561bd9c974031108c6e7b771153af13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>33352190974031108c6e7b771153afc5</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>pa_breakdown_mappings_6561bd9c974031108c6e7b771153af13</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-11 11:10:45</sys_updated_on>
+    </pa_breakdown_mappings>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>OverdueAttestationsScript</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+			var jsonObj = JSON.parse(event.parm2);
+			
+          template.print(jsonObj.application + ' has ' + jsonObj.attestationCount + ' overdue attestations');
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 13:36:58</sys_created_on>
+        <sys_id>eee23c14970721108c6e7b771153af93</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>OverdueAttestationsScript</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_email_eee23c14970721108c6e7b771153af93</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 14:48:51</sys_updated_on>
+    </sys_script_email>
+</record_update>

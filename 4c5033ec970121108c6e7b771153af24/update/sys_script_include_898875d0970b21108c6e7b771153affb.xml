@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_sc_grc_co.test</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>test</name>
+        <script><![CDATA[var test = Class.create();
+test.prototype = {
+    initialize: function() {
+    },
+	
+	testMethod: function()
+	{
+		gs.info('test - here');
+		var currentDate = new GlideDateTime();
+		gs.info('Date: ' + currentDate);
+		var threeMonthsFromNowReallyLongVariableName = currentDate;
+		threeMonthsFromNowReallyLongVariableName.addMonthsUTC(3);
+		gs.info('3 years: ' + threeMonthsFromNowReallyLongVariableName);
+		return threeMonthsFromNowReallyLongVariableName.toString()
+	},
+
+    type: 'test'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 18:40:46</sys_created_on>
+        <sys_id>898875d0970b21108c6e7b771153affb</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>test</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_include_898875d0970b21108c6e7b771153affb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 19:27:31</sys_updated_on>
+    </sys_script_include>
+</record_update>

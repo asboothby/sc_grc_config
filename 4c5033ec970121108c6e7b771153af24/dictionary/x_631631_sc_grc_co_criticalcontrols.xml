@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5d43aca49702f1108c6e7b771153af35" label="CriticalControls" max_length="40" name="x_631631_sc_grc_co_criticalcontrols" type="collection">
+        <element label="Critical Control Objective" max_length="32" name="critical_control_objective" reference="sn_compliance_policy_statement" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <index name="index">
+            <element name="critical_control_objective"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_reference">
+    <sys_ui_hp_reference action="DELETE">
+        <publisher_reference display_value="User">bb9d27c5970ba1108c6e7b771153af95</publisher_reference>
+        <reference_field>program_mgr_email</reference_field>
+        <reference_table>x_631631_grc_contr_contract</reference_table>
+        <sys_class_name>sys_ui_hp_reference</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 11:36:49</sys_created_on>
+        <sys_id>b4a43f8d970ba1108c6e7b771153af4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bb9d27c5970ba1108c6e7b771153af95</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_ui_hp_reference_b4a43f8d970ba1108c6e7b771153af4e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 11:36:49</sys_updated_on>
+    </sys_ui_hp_reference>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_ui_hp_reference_b4a43f8d970ba1108c6e7b771153af4e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_reference"><sys_ui_hp_reference action="INSERT_OR_UPDATE"><publisher_reference display_value="User">bb9d27c5970ba1108c6e7b771153af95</publisher_reference><reference_field>program_mgr_email</reference_field><reference_table>x_631631_grc_contr_contract</reference_table><sys_class_name>sys_ui_hp_reference</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-25 11:36:49</sys_created_on><sys_id>b4a43f8d970ba1108c6e7b771153af4e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bb9d27c5970ba1108c6e7b771153af95</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sys_ui_hp_reference_b4a43f8d970ba1108c6e7b771153af4e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-25 11:36:49</sys_updated_on></sys_ui_hp_reference></record_update>]]></payload>
+        <payload_hash>-1139105235</payload_hash>
+        <record_name>bb9d27c5970ba1108c6e7b771153af95</record_name>
+        <reverted_from/>
+        <source>d77c5916973221108c6e7b771153af75</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 11:36:49</sys_created_on>
+        <sys_id>e1b4bf8d970ba1108c6e7b771153af8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18852b27fa40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 11:36:49</sys_updated_on>
+        <type>Interactive Filter Reference</type>
+        <update_guid>2db4bf8d910ba1103bd51d47b60b638d</update_guid>
+        <update_guid_history>2db4bf8d910ba1103bd51d47b60b638d:-1139105235</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 16:00:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_hp_reference">sys_ui_hp_reference</sys_db_object>
+        <sys_id>2753e451096743d4864b9a3cb2990b11</sys_id>
+        <sys_metadata>b4a43f8d970ba1108c6e7b771153af4e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bb9d27c5970ba1108c6e7b771153af95</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_ui_hp_reference_b4a43f8d970ba1108c6e7b771153af4e</sys_update_name>
+        <sys_update_version display_value="sys_ui_hp_reference_b4a43f8d970ba1108c6e7b771153af4e">e1b4bf8d970ba1108c6e7b771153af8e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 16:00:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

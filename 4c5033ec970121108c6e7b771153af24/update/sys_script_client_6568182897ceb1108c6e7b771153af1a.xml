@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>state</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Prevent PE for Critical Controls</name>
+        <order/>
+        <script><![CDATA[function onChange() {
+
+	if(g_form.getValue('state') == 5)
+	{
+		var gaCritical = new GlideAjax('x_631631_sc_grc_co.grcIssueAjaxUtilBase');
+	
+		gaCritical.addParam('sysparm_name', 'isCriticalControl');
+		gaCritical.addParam('controlObjective', g_form.getValue('content'));
+
+		gaCritical.getXMLAnswer(getResponse);
+	}
+	
+	function getResponse(response)
+	{
+		var answer = response;
+		alert('answer: ' + answer + ' ' + answer.length);
+		if(answer=='true')
+		{
+			g_form.removeOption('response', 2);
+		}
+		
+	}
+
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-19 09:55:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6568182897ceb1108c6e7b771153af1a</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Prevent PE for Critical Controls</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_client_6568182897ceb1108c6e7b771153af1a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-19 14:20:36</sys_updated_on>
+        <table>sn_grc_issue</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

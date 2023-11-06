@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-19 10:14:01</sys_created_on>
+        <sys_id>fd73a0e49702f1108c6e7b771153af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_criticalcontrols.x_631631_sc_grc_co.criticalcontrols_user</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_security_acl display_value="x_631631_sc_grc_co_criticalcontrols">7173a0e49702f1108c6e7b771153af19</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fd73a0e49702f1108c6e7b771153af1b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-19 10:14:01</sys_updated_on>
+        <sys_user_role display_value="x_631631_sc_grc_co.criticalcontrols_user" name="x_631631_sc_grc_co.criticalcontrols_user">7973e0649702f1108c6e7b771153affb</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

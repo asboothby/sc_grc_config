@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>Get Supplier List</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var hdrs = {};
+	var writer = response.getStreamWriter();
+	var result = {};
+		hdrs['Content-Type'] = 'application/json';
+		response.setStatus(200);
+		response.setHeaders(hdrs);
+
+		var grSupplier = new GlideRecord('x_631631_grc_contr_supplier');
+		grSupplier.setLimit(100);
+		grSupplier.query();
+		
+		writer.writeString("{\"results\":[");
+		
+		while (grSupplier.next())
+		{
+			var supplierObj = {};
+			supplierObj.name = grSupplier.supplier_name + '';
+			supplierObj.id = grSupplier.system_id + '';
+			writer.writeString(global.JSON.stringify(supplierObj));
+			
+			if(grSupplier.hasNext())
+			{
+				writer.writeString(",");
+			}
+
+		}
+		writer.writeString("]}");
+// 	}
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_631631_sc_grc_co/supplier/GetList</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/GetList</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-06-12 10:52:22</sys_created_on>
+        <sys_id>c83b44cb971321108c6e7b771153afa9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Get Supplier List</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_ws_operation_c83b44cb971321108c6e7b771153afa9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-06-12 12:07:33</sys_updated_on>
+        <web_service_definition display_value="Supplier">4d2a8807971321108c6e7b771153af11</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

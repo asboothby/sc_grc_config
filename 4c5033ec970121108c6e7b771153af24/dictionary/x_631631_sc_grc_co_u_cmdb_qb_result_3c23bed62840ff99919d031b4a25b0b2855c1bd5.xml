@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ignore_baseline=true" db_object_id="dc10ccf8974871108c6e7b771153af42" extends="cmdb_qb_result_base" label="BusinessApps using Information Object-Query Results" max_length="40" name="x_631631_sc_grc_co_u_cmdb_qb_result_3c23bed62840ff99919d031b4a25b0b2855c1bd5" type="collection"/>
+</database>

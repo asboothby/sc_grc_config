@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b5680dad973471108c6e7b771153af97" label="x_631631_sc_grc_co_m2m_contracts_Business Applications" max_length="40" name="x_631631_sc_grc_co_m2m_x_631631_gr_cmdb_ci_busi" type="collection">
+        <element attributes="encode_utf8=false" label="Business Applications" max_length="32" name="cmdb_ci_business_app" reference="cmdb_ci_business_app" type="reference"/>
+        <element attributes="encode_utf8=false" label="contracts" max_length="32" name="x_631631_grc_contr_contract" reference="x_631631_grc_contr_contract" type="reference"/>
+        <index name="index">
+            <element name="cmdb_ci_business_app"/>
+        </index>
+        <index name="index2">
+            <element name="x_631631_grc_contr_contract"/>
+        </index>
+    </element>
+</database>

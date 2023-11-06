@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA User Associations - New Tab">adace385970ba1108c6e7b771153afb2</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2023-05-25 07:03:56">7b2defc1970ba1108c6e7b771153af31</portal_widget>
+        <posx>0</posx>
+        <posy>14</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 11:03:56</sys_created_on>
+        <sys_id>372defc1970ba1108c6e7b771153af33</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>adace385970ba1108c6e7b771153afb2</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_372defc1970ba1108c6e7b771153af33</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 16:01:03</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

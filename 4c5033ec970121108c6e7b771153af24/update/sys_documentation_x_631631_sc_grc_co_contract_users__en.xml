@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Sc grc co contract users" language="en" table="x_631631_sc_grc_co_contract_users">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Sc grc co contract users</label>
+            <language>en</language>
+            <name>x_631631_sc_grc_co_contract_users</name>
+            <plural>Sc grc co contract users</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 16:07:03</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Sc grc co contract users</sys_name>
+            <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+            <sys_update_name>sys_documentation_x_631631_sc_grc_co_contract_users__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 16:07:03</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_grc_profile" version="2" view="RPT7e7ba705970ba1108c6e7b771153af5a">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>core_company</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>767ba705970ba1108c6e7b771153af61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>f67ba705970ba1108c6e7b771153af61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>owned_by</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>7a7ba705970ba1108c6e7b771153af61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>applies_to</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>fa7ba705970ba1108c6e7b771153af61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>7e7ba705970ba1108c6e7b771153af61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>has_downstream_controls</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>fe7ba705970ba1108c6e7b771153af61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>owner_last_synched_on</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>727ba705970ba1108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>table</element>
+            <list_id display_value="sn_grc_profile" element="NULL" name="sn_grc_profile" parent="NULL" relationship="NULL" sys_domain="global" view="327ba705970ba1108c6e7b771153af60">be7ba705970ba1108c6e7b771153af60</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_id>f27ba705970ba1108c6e7b771153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sn_grc_profile</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-05-25 10:56:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>be7ba705970ba1108c6e7b771153af60</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_grc_profile</sys_name>
+            <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+            <sys_update_name>sys_ui_list_sn_grc_profile_RPT7e7ba705970ba1108c6e7b771153af5a</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-05-25 10:56:30</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt7e7ba705970ba1108c6e7b771153af5a" name="RPT7e7ba705970ba1108c6e7b771153af5a">327ba705970ba1108c6e7b771153af60</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

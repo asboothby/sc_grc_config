@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-22 09:21:15</sys_created_on>
+        <sys_id>5ae8b34c970321108c6e7b771153af6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_grc_profile</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_scope_privilege_5ae8b34c970321108c6e7b771153af6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-22 09:21:15</sys_updated_on>
+        <target_name>sn_grc_profile</target_name>
+        <target_scope display_value="GRC: Profiles">53f81621cb200200829cf865734c9c58</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

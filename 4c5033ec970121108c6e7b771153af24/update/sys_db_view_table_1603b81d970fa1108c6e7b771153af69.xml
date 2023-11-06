@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 16:09:53</sys_created_on>
+        <sys_id>1603b81d970fa1108c6e7b771153af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_grc_contr_contract</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_db_view_table_1603b81d970fa1108c6e7b771153af69</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 16:09:53</sys_updated_on>
+        <table>x_631631_grc_contr_contract</table>
+        <variable_prefix>cntrPM</variable_prefix>
+        <view display_value="x_631631_sc_grc_co_contract_users">3c82741d970fa1108c6e7b771153af55</view>
+        <where_clause>cntrPM.sys_id = cntrCA.sys_id</where_clause>
+    </sys_db_view_table>
+</record_update>

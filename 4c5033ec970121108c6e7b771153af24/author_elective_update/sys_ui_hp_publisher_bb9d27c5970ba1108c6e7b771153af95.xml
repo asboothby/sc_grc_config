@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher">
+    <sys_ui_hp_publisher action="DELETE">
+        <allow_database_view_filter>false</allow_database_view_filter>
+        <allow_extended_table>false</allow_extended_table>
+        <boolean_field/>
+        <boolean_table/>
+        <date_filter/>
+        <default_boolean_field/>
+        <default_choice/>
+        <default_date_filter/>
+        <default_reference_field_value/>
+        <description/>
+        <exclusion_choice_list/>
+        <look_up_name/>
+        <name>Program Manager</name>
+        <reference_conditions/>
+        <reference_table>sys_user</reference_table>
+        <remove_all_option>false</remove_all_option>
+        <source_field/>
+        <source_table/>
+        <sys_class_name>sys_ui_hp_publisher</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 11:06:49</sys_created_on>
+        <sys_id>bb9d27c5970ba1108c6e7b771153af95</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Program Manager</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_ui_hp_publisher_bb9d27c5970ba1108c6e7b771153af95</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 15:56:31</sys_updated_on>
+        <type>2</type>
+        <ui_control_type>2</ui_control_type>
+        <use_starts_with_on_search_keyword>false</use_starts_with_on_search_keyword>
+    </sys_ui_hp_publisher>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_ui_hp_publisher_bb9d27c5970ba1108c6e7b771153af95</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher"><sys_ui_hp_publisher action="INSERT_OR_UPDATE"><allow_database_view_filter>false</allow_database_view_filter><allow_extended_table>false</allow_extended_table><boolean_field/><boolean_table/><date_filter/><default_boolean_field/><default_choice/><default_date_filter/><default_reference_field_value/><description/><exclusion_choice_list/><look_up_name/><name>Program Manager</name><reference_conditions/><reference_table>sys_user</reference_table><remove_all_option>false</remove_all_option><source_field/><source_table/><sys_class_name>sys_ui_hp_publisher</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-05-25 11:06:49</sys_created_on><sys_id>bb9d27c5970ba1108c6e7b771153af95</sys_id><sys_mod_count>4</sys_mod_count><sys_name>Program Manager</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sys_ui_hp_publisher_bb9d27c5970ba1108c6e7b771153af95</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-05-25 15:56:31</sys_updated_on><type>2</type><ui_control_type>2</ui_control_type><use_starts_with_on_search_keyword>false</use_starts_with_on_search_keyword></sys_ui_hp_publisher></record_update>]]></payload>
+        <payload_hash>1066219906</payload_hash>
+        <record_name>Program Manager</record_name>
+        <reverted_from/>
+        <source>d77c5916973221108c6e7b771153af75</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 15:56:32</sys_created_on>
+        <sys_id>b520bc59970fa1108c6e7b771153af95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18853a043b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 15:56:32</sys_updated_on>
+        <type>Interactive Filter</type>
+        <update_guid>bd20bc59600fa11062c8b11ba9dc8294</update_guid>
+        <update_guid_history>bd20bc59600fa11062c8b11ba9dc8294:1066219906,b99d24d51f0fa1109c9c5311bb69b5e5:-192912394,5b8f2349220ba110c57daafd232ccda6:1643740851,52eeab09750ba110b78534018941dfc1:-192912394,4edd6b85e70ba1103470c3a08d30961f:170554104</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-25 16:00:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_hp_publisher">sys_ui_hp_publisher</sys_db_object>
+        <sys_id>3f37e731e03545c4afb7d54412d8e990</sys_id>
+        <sys_metadata>bb9d27c5970ba1108c6e7b771153af95</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Program Manager</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_ui_hp_publisher_bb9d27c5970ba1108c6e7b771153af95</sys_update_name>
+        <sys_update_version display_value="sys_ui_hp_publisher_bb9d27c5970ba1108c6e7b771153af95">b520bc59970fa1108c6e7b771153af95</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-25 16:00:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

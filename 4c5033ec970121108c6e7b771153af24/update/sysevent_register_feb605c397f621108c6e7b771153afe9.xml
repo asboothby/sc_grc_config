@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>Escalation to BA that attestation was not completed in time</description>
+        <event_name>x_631631_sc_grc_co.attestation.overdue</event_name>
+        <fired_by>Scheduled Job</fired_by>
+        <queue/>
+        <suffix>attestation.overdue</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-18 17:52:13</sys_created_on>
+        <sys_id>feb605c397f621108c6e7b771153afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co.attestation.overdue</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sysevent_register_feb605c397f621108c6e7b771153afe9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-05-18 17:52:13</sys_updated_on>
+        <table>asmt_assessment_instance_question</table>
+    </sysevent_register>
+</record_update>

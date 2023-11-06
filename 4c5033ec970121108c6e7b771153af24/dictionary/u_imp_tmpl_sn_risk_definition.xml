@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e4b4a603974321108c6e7b771153afc8" extends="sys_import_set_row" label="Imp Tmpl Sn Risk Definition" max_length="40" name="u_imp_tmpl_sn_risk_definition" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Assessment" label="Assessment" max_length="40" name="u_assessment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Category" label="Category" max_length="32" name="u_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="4000" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Framework" label="Framework" max_length="40" name="u_framework" type="string"/>
+        <element attributes="import_attribute_name=Inherent ARO" label="Inherent ARO" max_length="15" name="u_inherent_aro" type="integer"/>
+        <element attributes="import_attribute_name=Inherent SLE" label="Inherent SLE" max_length="20" name="u_inherent_sle" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="250" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Residual ARO" label="Residual ARO" max_length="15" name="u_residual_aro" type="integer"/>
+        <element attributes="import_attribute_name=Residual SLE" label="Residual SLE" max_length="40" name="u_residual_sle" type="integer"/>
+        <element attributes="import_attribute_name=Risidual SLE" label="Risidual SLE" max_length="40" name="u_risidual_sle" type="integer"/>
+    </element>
+</database>

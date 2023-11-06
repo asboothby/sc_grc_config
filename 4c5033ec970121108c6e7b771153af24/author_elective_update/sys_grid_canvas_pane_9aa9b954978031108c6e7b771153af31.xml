@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA Risk Factors - New Tab">f05679d0978031108c6e7b771153af20</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2023-07-11 07:46:32">96a9b954978031108c6e7b771153af2f</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-11 11:46:33</sys_created_on>
+        <sys_id>9aa9b954978031108c6e7b771153af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f05679d0978031108c6e7b771153af20</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_9aa9b954978031108c6e7b771153af31</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-11 11:46:33</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>e73c7985db2b8c949df22f17d496193f</instance_id>
+        <instance_name>dev103044</instance_name>
+        <name>sys_grid_canvas_pane_9aa9b954978031108c6e7b771153af31</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA Risk Factors - New Tab">f05679d0978031108c6e7b771153af20</grid_canvas><height>10</height><portal_widget display_value="Created 2023-07-11 07:46:32">96a9b954978031108c6e7b771153af2f</portal_widget><posx>0</posx><posy>0</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-07-11 11:46:33</sys_created_on><sys_id>9aa9b954978031108c6e7b771153af31</sys_id><sys_mod_count>0</sys_mod_count><sys_name>f05679d0978031108c6e7b771153af20</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sys_grid_canvas_pane_9aa9b954978031108c6e7b771153af31</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-07-11 11:46:33</sys_updated_on><width>12</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>-1057024352</payload_hash>
+        <record_name>f05679d0978031108c6e7b771153af20</record_name>
+        <reverted_from/>
+        <source>d77c5916973221108c6e7b771153af75</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-11 11:46:33</sys_created_on>
+        <sys_id>9ea9b1d4978031108c6e7b771153afe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18944c649e20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-11 11:46:33</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>d6a9b1d48d8031103615ceef0de1d9e1</update_guid>
+        <update_guid_history>d6a9b1d48d8031103615ceef0de1d9e1:-1057024352</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-11 11:55:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>896503de94634154b7b548bfadf09501</sys_id>
+        <sys_metadata>9aa9b954978031108c6e7b771153af31</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>f05679d0978031108c6e7b771153af20</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_9aa9b954978031108c6e7b771153af31</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_9aa9b954978031108c6e7b771153af31">9ea9b1d4978031108c6e7b771153afe1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-11 11:55:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Bus App Compliance Status">a85daba793e00210a541b6918bba10bd</decision_table>
+        <label>Result: no_assessment_found</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-01 15:35:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0032fb6f93e00210a541b6918bba10e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Result: no_assessment_found</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_decision_multi_result_0032fb6f93e00210a541b6918bba10e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-01 15:35:56</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=0032fb6f93e00210a541b6918bba10e9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>0032fb6f93e00210a541b6918bba10e9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-01 15:35:56</sys_created_on>
+        <sys_id>0432fb6f93e00210a541b6918bba10e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-01 15:35:56</sys_updated_on>
+        <value>no_assessment_found</value>
+        <variable display_value="Result">eb22fb6f93e00210a541b6918bba10a4</variable>
+    </sys_variable_value>
+</record_update>

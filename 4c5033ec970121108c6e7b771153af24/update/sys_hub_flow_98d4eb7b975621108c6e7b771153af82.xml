@@ -2,21 +2,22 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=25571985000,viewActivatedIn=naturalLanguage</attributes>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>autoanswer_attestation</internal_name>
-        <label_cache>[{"name":"Created_1.current.instance","label":"Trigger - Record Created➛Assessment Instance Question Record➛Instance","reference":"asmt_assessment_instance","reference_display":"Assessment Instance","type":"reference","base_type":"reference","parent_table_name":"asmt_assessment_instance_question","column_name":"instance"},{"name":"e6995abd-d0bc-4022-a7c1-97b86c4f9cb6.record.string_value","label":"8 - Update Record➛Assessment Instance Question Record➛String value","reference":"","reference_display":"String value","type":"string","base_type":"string","parent_table_name":"asmt_assessment_instance_question","column_name":"string_value"},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.Record","label":"7 - Look Up Record➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.status","label":"7 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.Record","label":"2 - Look Up Record➛AutoAnswer Matrix Record","reference":"x_631631_sc_grc_co_autoanswer_matrix","reference_display":"AutoAnswer Matrix","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.Record.assessment_control_type","label":"2 - Look Up Record➛AutoAnswer Matrix Record➛Assessment Control Type","reference":"sn_compliance_policy_statement","reference_display":"Control objective","type":"reference","base_type":"reference","parent_table_name":"x_631631_sc_grc_co_autoanswer_matrix","column_name":"assessment_control_type"},{"name":"50e22ae7-bf6e-4259-b150-ffe97c81182a.Record.content","label":"1 - Look Up Record➛Control Record➛Control objective","reference":"sn_grc_content","reference_display":"Content","type":"reference","base_type":"reference","parent_table_name":"sn_compliance_control","column_name":"content"},{"name":"50e22ae7-bf6e-4259-b150-ffe97c81182a.Record.content.sys_id","label":"1➛Control Record➛Control objective➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_grc_content","column_name":"sys_id"},{"name":"Created_1.current.source_id","label":"Trigger - Record Created➛Assessment Instance Question Record➛Source","reference":"","reference_display":"Source","type":"document_id","base_type":"document_id","parent_table_name":"asmt_assessment_instance_question","column_name":"source_id"}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.instance","label":"Trigger - Record Created➛Assessment Instance Question Record➛Instance","reference":"asmt_assessment_instance","reference_display":"Assessment Instance","type":"reference","base_type":"reference","parent_table_name":"asmt_assessment_instance_question","column_name":"instance"},{"name":"e6995abd-d0bc-4022-a7c1-97b86c4f9cb6.record.string_value","label":"10 - Update Record➛Assessment Instance Question Record➛String value","reference":"","reference_display":"String value","type":"string","base_type":"string","parent_table_name":"asmt_assessment_instance_question","column_name":"string_value"},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.Record","label":"8 - Look Up Record➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.status","label":"8 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"50e22ae7-bf6e-4259-b150-ffe97c81182a.Record.content","label":"2 - Look Up Record➛Control Record➛Control objective","reference":"sn_grc_content","reference_display":"Content","type":"reference","base_type":"reference","parent_table_name":"sn_compliance_control","column_name":"content"},{"name":"Created_1.current.source_id","label":"Trigger - Record Created➛Assessment Instance Question Record➛Source","reference":"","reference_display":"Source","type":"document_id","base_type":"document_id","parent_table_name":"asmt_assessment_instance_question","column_name":"source_id"}]</label_cache>
         <master_snapshot>edc1622997b131108c6e7b771153af85</master_snapshot>
         <name>Auto-answer Attestation</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>8ac1a22997b131108c6e7b771153af17</remote_trigger_id>
+        <remote_trigger_id>6b746b8f93140210a541b6918bba10a8</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -29,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>98d4eb7b975621108c6e7b771153af82</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Auto-answer Attestation</sys_name>
         <sys_overrides/>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
@@ -37,15 +38,16 @@
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>sys_hub_flow_98d4eb7b975621108c6e7b771153af82</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:53</sys_updated_on>
+        <sys_updated_on>2024-02-19 15:41:32</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=98d4eb7b975621108c6e7b771153af82"/>
     <sys_variable_value action="delete_multiple" query="document_key=98d4eb7b975621108c6e7b771153af82"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="asmt_assessment_instance_question">source_table=sn_compliance_control^metric.name=Is the control implemented?<item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="sn_compliance_control"/>
+        <condition table="asmt_assessment_instance_question">source_table=sn_compliance_control^metric.name=Is the control implemented?^value=1<item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="sn_compliance_control"/>
             <item endquery="false" field="metric.name" goto="false" newquery="false" operator="=" or="false" value="Is the control implemented?"/>
+            <item endquery="false" field="value" goto="false" newquery="false" operator="=" or="false" value="1"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -58,31 +60,31 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-10 11:44:07</sys_created_on>
+        <sys_created_on>2024-02-16 15:03:27</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>8ac1a22997b131108c6e7b771153af17</sys_id>
+        <sys_id>6b746b8f93140210a541b6918bba10a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-10 11:44:07</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <table>asmt_assessment_instance_question</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
         <identifier>98d4eb7b975621108c6e7b771153af82</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-11 11:19:52</sys_created_on>
-        <sys_id>50d52ff1977131108c6e7b771153af8d</sys_id>
+        <sys_created_on>2024-02-16 15:03:27</sys_created_on>
+        <sys_id>27746b8f93140210a541b6918bba10a9</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:52</sys_updated_on>
-        <trigger display_value="">8ac1a22997b131108c6e7b771153af17</trigger>
+        <sys_updated_on>2024-02-19 15:41:35</sys_updated_on>
+        <trigger display_value="">6b746b8f93140210a541b6918bba10a8</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=98d4eb7b975621108c6e7b771153af82^sys_idNOT IN50d52ff1977131108c6e7b771153af8d"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=98d4eb7b975621108c6e7b771153af82^sys_idNOT IN27746b8f93140210a541b6918bba10a9"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=98d4eb7b975621108c6e7b771153af82^sys_idNOT INd9a1aee597b131108c6e7b771153af14"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -93,10 +95,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:32</sys_created_on>
         <sys_id>d9a1aee597b131108c6e7b771153af14</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:52</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -111,10 +113,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:32</sys_created_on>
         <sys_id>1da1aee597b131108c6e7b771153af15</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-10 11:43:32</sys_updated_on>
-        <value>source_table=sn_compliance_control^metric.name=Is the control implemented?</value>
+        <sys_updated_on>2024-02-16 15:03:12</sys_updated_on>
+        <value>source_table=sn_compliance_control^metric.name=Is the control implemented?^value=1</value>
         <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -209,14 +211,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:32</sys_created_on>
         <sys_id>11a1aee597b131108c6e7b771153af10</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:52</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -229,6 +231,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=11a1aee597b131108c6e7b771153af10"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -292,14 +295,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:32</sys_created_on>
         <sys_id>99a1aee597b131108c6e7b771153af07</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:52</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -312,27 +315,29 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=99a1aee597b131108c6e7b771153af07"/>
     <sys_hub_flow_output action="delete_multiple" query="model=98d4eb7b975621108c6e7b771153af82"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=98d4eb7b975621108c6e7b771153af82"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=98d4eb7b975621108c6e7b771153af82^sys_idNOT IN0d8077e5973931108c6e7b771153af25,19e84ba5977531108c6e7b771153af60,21a1aee597b131108c6e7b771153af29,384907e5977531108c6e7b771153af51,59a1aee597b131108c6e7b771153af1e,65a1aee597b131108c6e7b771153af34,69e84ba5977531108c6e7b771153af7d,9de84ba5977531108c6e7b771153af6a,a5e84ba5977531108c6e7b771153af75,b88077e5973931108c6e7b771153af13"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=98d4eb7b975621108c6e7b771153af82^sys_idNOT IN0d8077e5973931108c6e7b771153af25,19e84ba5977531108c6e7b771153af60,1a879b4f93d00210a541b6918bba107d,21a1aee597b131108c6e7b771153af29,384907e5977531108c6e7b771153af51,59a1aee597b131108c6e7b771153af1e,65a1aee597b131108c6e7b771153af34,69e84ba5977531108c6e7b771153af7d,9de84ba5977531108c6e7b771153af6a,a5e84ba5977531108c6e7b771153af75,b88077e5973931108c6e7b771153af13"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>11</order>
+        <order>12</order>
         <parent_ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 17:28:07</sys_created_on>
         <sys_id>0d8077e5973931108c6e7b771153af25</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>5d2ae253-046d-462f-858e-3e45b7e1a418</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0d8077e5973931108c6e7b771153af25"/>
@@ -358,10 +363,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 17:28:07</sys_created_on>
         <sys_id>458077e5973931108c6e7b771153af27</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-10 17:28:07</sys_updated_on>
-        <value>state=complete</value>
+        <sys_updated_on>2024-02-16 15:02:01</sys_updated_on>
+        <value>state=complete^percent_answered=100</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=0d8077e5973931108c6e7b771153af25"/>
@@ -408,19 +413,20 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>6</order>
+        <order>7</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:01</sys_created_on>
         <sys_id>19e84ba5977531108c6e7b771153af60</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>af6e7dfe-4d4c-43bb-950e-4c4c25885e7d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=19e84ba5977531108c6e7b771153af60"/>
@@ -493,22 +499,61 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=19e84ba5977531108c6e7b771153af60"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>2</order>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-16 14:06:50</sys_created_on>
+        <sys_id>1a879b4f93d00210a541b6918bba107d</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
+        <ui_id>d836356e-27e3-4e31-9b7a-48daa153ffde</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1a879b4f93d00210a541b6918bba107d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1a879b4f93d00210a541b6918bba107d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-16 14:06:50</sys_created_on>
+        <sys_id>5e879b4f93d00210a541b6918bba1098</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 14:06:50</sys_updated_on>
+        <value>Auto-answer Attestation started</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=1a879b4f93d00210a541b6918bba107d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1a879b4f93d00210a541b6918bba107d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1a879b4f93d00210a541b6918bba107d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
+        <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:32</sys_created_on>
         <sys_id>21a1aee597b131108c6e7b771153af29</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>e53cf69c-9414-4769-9320-74137c5c03c7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=21a1aee597b131108c6e7b771153af29"/>
@@ -558,19 +603,20 @@
         <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>10</order>
+        <order>11</order>
         <parent_ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:36:37</sys_created_on>
         <sys_id>384907e5977531108c6e7b771153af51</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>b82bda25-4330-4407-8e50-c8cf1e7d101a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=384907e5977531108c6e7b771153af51"/>
@@ -594,19 +640,20 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:32</sys_created_on>
         <sys_id>59a1aee597b131108c6e7b771153af1e</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>50e22ae7-bf6e-4259-b150-ffe97c81182a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=59a1aee597b131108c6e7b771153af1e"/>
@@ -655,19 +702,20 @@
         <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>4</order>
+        <order>5</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:33</sys_created_on>
         <sys_id>65a1aee597b131108c6e7b771153af34</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>1c96a347-d40d-4cef-8d60-cc2e3a92789d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=65a1aee597b131108c6e7b771153af34"/>
@@ -692,19 +740,20 @@
         <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>13</order>
+        <order>14</order>
         <parent_ui_id>ba1ac389-8966-4e00-a28e-b611ad2ad90d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:02</sys_created_on>
         <sys_id>69e84ba5977531108c6e7b771153af7d</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>52ece833-4c0f-46b3-b1f0-08925f228d1f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=69e84ba5977531108c6e7b771153af7d"/>
@@ -730,19 +779,20 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>7</order>
+        <order>8</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:01</sys_created_on>
         <sys_id>9de84ba5977531108c6e7b771153af6a</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>8b26b0fd-7884-4c4f-a51c-98e741458031</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9de84ba5977531108c6e7b771153af6a"/>
@@ -792,19 +842,20 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>9</order>
+        <order>10</order>
         <parent_ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:02</sys_created_on>
         <sys_id>a5e84ba5977531108c6e7b771153af75</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>e6995abd-d0bc-4022-a7c1-97b86c4f9cb6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a5e84ba5977531108c6e7b771153af75"/>
@@ -880,19 +931,20 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">98d4eb7b975621108c6e7b771153af82</flow>
-        <order>5</order>
+        <order>6</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 17:28:07</sys_created_on>
         <sys_id>b88077e5973931108c6e7b771153af13</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2023-11-06 10:00:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>9f508272-f26c-4423-8399-74b9408a8e57</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b88077e5973931108c6e7b771153af13"/>
@@ -966,7 +1018,8 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=98d4eb7b975621108c6e7b771153af82"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=98d4eb7b975621108c6e7b771153af82^sys_idNOT IN21a1aee597b131108c6e7b771153af2c,21e84ba5977531108c6e7b771153af6e,6de84ba5977531108c6e7b771153af77"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">21a1aee597b131108c6e7b771153af2b</block>
+        <attributes/>
+        <block display_value="">9a879b4f93d00210a541b6918bba109f</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -979,7 +1032,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>3</order>
+        <order>4</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -987,10 +1040,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:43:32</sys_created_on>
         <sys_id>21a1aee597b131108c6e7b771153af2c</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:53</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1038,7 +1091,8 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=21a1aee597b131108c6e7b771153af2c"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=21a1aee597b131108c6e7b771153af2c"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">15e84ba5977531108c6e7b771153af6d</block>
+        <attributes/>
+        <block display_value="">5e879b4f93d00210a541b6918bba10d0</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1051,7 +1105,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>8</order>
+        <order>9</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
@@ -1059,10 +1113,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:02</sys_created_on>
         <sys_id>21e84ba5977531108c6e7b771153af6e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:53</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1110,7 +1164,8 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=21e84ba5977531108c6e7b771153af6e"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=21e84ba5977531108c6e7b771153af6e"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">a5e84ba5977531108c6e7b771153af77</block>
+        <attributes/>
+        <block display_value="">d2879b4f93d00210a541b6918bba10d9</block>
         <comment/>
         <connected_to>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</connected_to>
         <decision_table/>
@@ -1122,7 +1177,7 @@
         <flow_variables_assigned/>
         <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>12</order>
+        <order>13</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -1130,10 +1185,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:02</sys_created_on>
         <sys_id>6de84ba5977531108c6e7b771153af77</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:53</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <ui_id>ba1ac389-8966-4e00-a28e-b611ad2ad90d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1198,13 +1253,14 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>autoanswer_attestation</internal_name>
-        <label_cache>[{"name":"Created_1.current.instance","label":"Trigger - Record Created➛Assessment Instance Question Record➛Instance","reference":"asmt_assessment_instance","reference_display":"Assessment Instance","type":"reference","base_type":"reference","parent_table_name":"asmt_assessment_instance_question","column_name":"instance"},{"name":"e6995abd-d0bc-4022-a7c1-97b86c4f9cb6.record.string_value","label":"8 - Update Record➛Assessment Instance Question Record➛String value","reference":"","reference_display":"String value","type":"string","base_type":"string","parent_table_name":"asmt_assessment_instance_question","column_name":"string_value"},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.Record","label":"7 - Look Up Record➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.status","label":"7 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.Record","label":"2 - Look Up Record➛AutoAnswer Matrix Record","reference":"x_631631_sc_grc_co_autoanswer_matrix","reference_display":"AutoAnswer Matrix","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.Record.assessment_control_type","label":"2 - Look Up Record➛AutoAnswer Matrix Record➛Assessment Control Type","reference":"sn_compliance_policy_statement","reference_display":"Control objective","type":"reference","base_type":"reference","parent_table_name":"x_631631_sc_grc_co_autoanswer_matrix","column_name":"assessment_control_type"},{"name":"50e22ae7-bf6e-4259-b150-ffe97c81182a.Record.content","label":"1 - Look Up Record➛Control Record➛Control objective","reference":"sn_grc_content","reference_display":"Content","type":"reference","base_type":"reference","parent_table_name":"sn_compliance_control","column_name":"content"},{"name":"50e22ae7-bf6e-4259-b150-ffe97c81182a.Record.content.sys_id","label":"1➛Control Record➛Control objective➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_grc_content","column_name":"sys_id"},{"name":"Created_1.current.source_id","label":"Trigger - Record Created➛Assessment Instance Question Record➛Source","reference":"","reference_display":"Source","type":"document_id","base_type":"document_id","parent_table_name":"asmt_assessment_instance_question","column_name":"source_id"}]</label_cache>
+        <label_cache>[{"name":"Created_1.current.instance","label":"Trigger - Record Created➛Assessment Instance Question Record➛Instance","reference":"asmt_assessment_instance","reference_display":"Assessment Instance","type":"reference","base_type":"reference","parent_table_name":"asmt_assessment_instance_question","column_name":"instance"},{"name":"e6995abd-d0bc-4022-a7c1-97b86c4f9cb6.record.string_value","label":"10 - Update Record➛Assessment Instance Question Record➛String value","reference":"","reference_display":"String value","type":"string","base_type":"string","parent_table_name":"asmt_assessment_instance_question","column_name":"string_value"},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.Record","label":"8 - Look Up Record➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8b26b0fd-7884-4c4f-a51c-98e741458031.status","label":"8 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Assessment Instance Question Record","reference":"asmt_assessment_instance_question","reference_display":"Assessment Instance Question","type":"reference","base_type":"reference","attributes":{}},{"name":"e53cf69c-9414-4769-9320-74137c5c03c7.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"50e22ae7-bf6e-4259-b150-ffe97c81182a.Record.content","label":"2 - Look Up Record➛Control Record➛Control objective","reference":"sn_grc_content","reference_display":"Content","type":"reference","base_type":"reference","parent_table_name":"sn_compliance_control","column_name":"content"},{"name":"Created_1.current.source_id","label":"Trigger - Record Created➛Assessment Instance Question Record➛Source","reference":"","reference_display":"Source","type":"document_id","base_type":"document_id","parent_table_name":"asmt_assessment_instance_question","column_name":"source_id"}]</label_cache>
         <master>true</master>
         <name>Auto-answer Attestation</name>
         <natlang/>
@@ -1221,7 +1277,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edc1622997b131108c6e7b771153af85</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1229,7 +1285,7 @@
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:25</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=edc1622997b131108c6e7b771153af85"/>
@@ -1244,10 +1300,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:07</sys_created_on>
         <sys_id>bdc1622997b131108c6e7b771153afe2</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:52</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1276,10 +1332,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:07</sys_created_on>
         <sys_id>f1c1622997b131108c6e7b771153afe4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-10 11:44:07</sys_updated_on>
-        <value>source_table=sn_compliance_control^metric.name=Is the control implemented?</value>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
+        <value>source_table=sn_compliance_control^metric.name=Is the control implemented?^value=1</value>
         <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
     </sys_variable_value>
     <sys_hub_flow_stage action="delete_multiple" query="flow=edc1622997b131108c6e7b771153af85"/>
@@ -1360,14 +1416,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:06</sys_created_on>
         <sys_id>a9c1622997b131108c6e7b771153af88</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:49</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1380,6 +1436,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a9c1622997b131108c6e7b771153af88"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1443,14 +1500,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:06</sys_created_on>
         <sys_id>adc1622997b131108c6e7b771153af9f</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1463,27 +1520,29 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=adc1622997b131108c6e7b771153af9f"/>
     <sys_hub_flow_output action="delete_multiple" query="model=edc1622997b131108c6e7b771153af85"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=edc1622997b131108c6e7b771153af85"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=edc1622997b131108c6e7b771153af85^sys_idNOT IN0780f7e5973931108c6e7b771153afde,0780f7e5973931108c6e7b771153afea,39c1622997b131108c6e7b771153afd1,39c1622997b131108c6e7b771153afda,3fe8cba5977531108c6e7b771153afe0,3fe8cba5977531108c6e7b771153afe6,77e8cba5977531108c6e7b771153afed,79c1622997b131108c6e7b771153afe1,834987e5977531108c6e7b771153aff0,b7e8cba5977531108c6e7b771153afd6"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=edc1622997b131108c6e7b771153af85^sys_idNOT IN0780f7e5973931108c6e7b771153afde,0780f7e5973931108c6e7b771153afea,32979f4f93d00210a541b6918bba10f5,39c1622997b131108c6e7b771153afd1,39c1622997b131108c6e7b771153afda,3fe8cba5977531108c6e7b771153afe0,3fe8cba5977531108c6e7b771153afe6,77e8cba5977531108c6e7b771153afed,79c1622997b131108c6e7b771153afe1,834987e5977531108c6e7b771153aff0,b7e8cba5977531108c6e7b771153afd6"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>5</order>
+        <order>6</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 17:28:16</sys_created_on>
         <sys_id>0780f7e5973931108c6e7b771153afde</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <ui_id>9f508272-f26c-4423-8399-74b9408a8e57</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0780f7e5973931108c6e7b771153afde"/>
@@ -1559,19 +1618,20 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>11</order>
+        <order>12</order>
         <parent_ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 17:28:16</sys_created_on>
         <sys_id>0780f7e5973931108c6e7b771153afea</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:25</sys_updated_on>
         <ui_id>5d2ae253-046d-462f-858e-3e45b7e1a418</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0780f7e5973931108c6e7b771153afea"/>
@@ -1597,10 +1657,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 17:28:16</sys_created_on>
         <sys_id>5f80f7e5973931108c6e7b771153afeb</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-10 17:28:16</sys_updated_on>
-        <value>state=complete</value>
+        <sys_updated_on>2024-02-16 15:02:13</sys_updated_on>
+        <value>state=complete^percent_answered=100</value>
         <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=0780f7e5973931108c6e7b771153afea"/>
@@ -1644,9 +1704,9 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=0780f7e5973931108c6e7b771153afea"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
@@ -1654,12 +1714,51 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-10-10 11:44:06</sys_created_on>
-        <sys_id>39c1622997b131108c6e7b771153afd1</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_created_on>2024-02-16 14:07:09</sys_created_on>
+        <sys_id>32979f4f93d00210a541b6918bba10f5</sys_id>
+        <sys_mod_count>12</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
+        <ui_id>d836356e-27e3-4e31-9b7a-48daa153ffde</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=32979f4f93d00210a541b6918bba10f5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>32979f4f93d00210a541b6918bba10f5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-02-16 14:07:09</sys_created_on>
+        <sys_id>72979f4f93d00210a541b6918bba10f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 14:07:09</sys_updated_on>
+        <value>Auto-answer Attestation started</value>
+        <variable display_value="Message">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4^id=32979f4f93d00210a541b6918bba10f5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=32979f4f93d00210a541b6918bba10f5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=32979f4f93d00210a541b6918bba10f5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-10 11:44:06</sys_created_on>
+        <sys_id>39c1622997b131108c6e7b771153afd1</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <ui_id>50e22ae7-bf6e-4259-b150-ffe97c81182a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=39c1622997b131108c6e7b771153afd1"/>
@@ -1709,19 +1808,20 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>2</order>
+        <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:06</sys_created_on>
         <sys_id>39c1622997b131108c6e7b771153afda</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <ui_id>e53cf69c-9414-4769-9320-74137c5c03c7</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=39c1622997b131108c6e7b771153afda"/>
@@ -1771,19 +1871,20 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>7</order>
+        <order>8</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:11</sys_created_on>
         <sys_id>3fe8cba5977531108c6e7b771153afe0</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <ui_id>8b26b0fd-7884-4c4f-a51c-98e741458031</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3fe8cba5977531108c6e7b771153afe0"/>
@@ -1833,19 +1934,20 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>9</order>
+        <order>10</order>
         <parent_ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:11</sys_created_on>
         <sys_id>3fe8cba5977531108c6e7b771153afe6</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:25</sys_updated_on>
         <ui_id>e6995abd-d0bc-4022-a7c1-97b86c4f9cb6</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3fe8cba5977531108c6e7b771153afe6"/>
@@ -1920,19 +2022,20 @@
         <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>13</order>
+        <order>14</order>
         <parent_ui_id>ba1ac389-8966-4e00-a28e-b611ad2ad90d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:11</sys_created_on>
         <sys_id>77e8cba5977531108c6e7b771153afed</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:25</sys_updated_on>
         <ui_id>52ece833-4c0f-46b3-b1f0-08925f228d1f</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=77e8cba5977531108c6e7b771153afed"/>
@@ -1957,19 +2060,20 @@
         <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>4</order>
+        <order>5</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:07</sys_created_on>
         <sys_id>79c1622997b131108c6e7b771153afe1</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <ui_id>1c96a347-d40d-4cef-8d60-cc2e3a92789d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=79c1622997b131108c6e7b771153afe1"/>
@@ -1995,19 +2099,20 @@
         <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>10</order>
+        <order>11</order>
         <parent_ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:36:47</sys_created_on>
         <sys_id>834987e5977531108c6e7b771153aff0</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:25</sys_updated_on>
         <ui_id>b82bda25-4330-4407-8e50-c8cf1e7d101a</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=834987e5977531108c6e7b771153aff0"/>
@@ -2031,19 +2136,20 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="Auto-answer Attestation">edc1622997b131108c6e7b771153af85</flow>
-        <order>6</order>
+        <order>7</order>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:11</sys_created_on>
         <sys_id>b7e8cba5977531108c6e7b771153afd6</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <ui_id>af6e7dfe-4d4c-43bb-950e-4c4c25885e7d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b7e8cba5977531108c6e7b771153afd6"/>
@@ -2117,7 +2223,8 @@
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=edc1622997b131108c6e7b771153af85"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=edc1622997b131108c6e7b771153af85^sys_idNOT IN73e80fa5977531108c6e7b771153af02,e5c1622997b131108c6e7b771153afab,fbe80fa5977531108c6e7b771153af05"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">15e84ba5977531108c6e7b771153af6d</block>
+        <attributes/>
+        <block display_value="">5e879b4f93d00210a541b6918bba10d0</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -2130,7 +2237,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>8</order>
+        <order>9</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</parent_ui_id>
@@ -2138,10 +2245,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:12</sys_created_on>
         <sys_id>73e80fa5977531108c6e7b771153af02</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:25</sys_updated_on>
         <ui_id>ecb2aad9-e0a6-4fe7-86bd-b634ae230765</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2189,7 +2296,8 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=73e80fa5977531108c6e7b771153af02"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=73e80fa5977531108c6e7b771153af02"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">21a1aee597b131108c6e7b771153af2b</block>
+        <attributes/>
+        <block display_value="">9a879b4f93d00210a541b6918bba109f</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -2202,7 +2310,7 @@
         <inputs/>
         <inputs/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>3</order>
+        <order>4</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -2210,10 +2318,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:06</sys_created_on>
         <sys_id>e5c1622997b131108c6e7b771153afab</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:24</sys_updated_on>
         <ui_id>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2261,7 +2369,8 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e5c1622997b131108c6e7b771153afab"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=e5c1622997b131108c6e7b771153afab"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">a5e84ba5977531108c6e7b771153af77</block>
+        <attributes/>
+        <block display_value="">d2879b4f93d00210a541b6918bba10d9</block>
         <comment/>
         <connected_to>19b785fe-0b1f-4aa3-9a74-3fb96c90adf8</connected_to>
         <decision_table/>
@@ -2273,7 +2382,7 @@
         <flow_variables_assigned/>
         <inputs/>
         <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
-        <order>12</order>
+        <order>13</order>
         <outputs_assigned/>
         <outputs_to_assign/>
         <parent_ui_id/>
@@ -2281,10 +2390,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 14:35:12</sys_created_on>
         <sys_id>fbe80fa5977531108c6e7b771153af05</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:50</sys_updated_on>
+        <sys_updated_on>2024-02-16 15:03:25</sys_updated_on>
         <ui_id>ba1ac389-8966-4e00-a28e-b611ad2ad90d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2347,25 +2456,25 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>98d4eb7b975621108c6e7b771153af82</sys_id>
         <latest_snapshot>edc1622997b131108c6e7b771153af85</latest_snapshot>
-        <compiler_build>glide-utah-12-21-2022__patch7a-09-28-2023_10-10-2023_1258.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch2-hotfix1-10-04-2023_10-06-2023_1235.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=98d4eb7b975621108c6e7b771153af82^sys_idNOT IN0ec1a22997b131108c6e7b771153af19"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"0ec1a22997b131108c6e7b771153af19","name":"plan","plan_signature":null}}</plan>
         <plan_id>98d4eb7b975621108c6e7b771153af82</plan_id>
-        <snapshot>151d4d16971231108c6e7b771153afb7</snapshot>
+        <snapshot>edc1622997b131108c6e7b771153af85</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-10-10 11:44:07</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0ec1a22997b131108c6e7b771153af19</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-11 11:19:52</sys_updated_on>
-        <trigger display_value="">8ac1a22997b131108c6e7b771153af17</trigger>
+        <sys_updated_on>2024-02-16 15:03:27</sys_updated_on>
+        <trigger display_value="">6b746b8f93140210a541b6918bba10a8</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=98d4eb7b975621108c6e7b771153af82"/>
 </record_update>

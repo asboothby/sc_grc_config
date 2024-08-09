@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sn_compliance_policy_statement</collection>
+        <condition>new  sn_compliance.ComplianceUtils().hasControlObjectiveFieldChanges(current)</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Cascade Changes</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+    var control = new GlideRecord('sn_compliance_control');
+    control.addQuery('content', current.getUniqueValue());
+    control.addQuery('instance', true);
+    control.addQuery('state', '!=', 'retired');
+    control.orderBy("sys_created_on");
+    control.query();
+    var isSmartAssessmentPluginInstalled = false; //new sn_grc.GRCUtils().isSmartAssessmentPluginInstalled;
+    while (control.next()) {
+        control.name = current.name + '';
+        control.description = current.description + '';
+        control.reference = current.reference + '';
+        control.category = current.category + '';
+        control.type = current.type + '';
+        control.classification = current.classification + '';
+        if (control.requirement_level_attestation == false)
+            control.attestation = current.attestation + '';
+        control.supplemental_guidance = current.supplemental_guidance + '';
+
+        if (isSmartAssessmentPluginInstalled) {
+            control.assessment_method = current.assessment_method + '';
+            control.smart_assessment = current.smart_assessment + '';
+        }
+        // control.state = 'draft';
+        control.update();
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-08-01 10:27:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>15e66a3cc3ff821057d59242b401318a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Cascade Changes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_15e66a3cc3ff821057d59242b401318a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-08-01 11:51:51</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=15e66a3cc3ff821057d59242b401318a"/>
+</record_update>

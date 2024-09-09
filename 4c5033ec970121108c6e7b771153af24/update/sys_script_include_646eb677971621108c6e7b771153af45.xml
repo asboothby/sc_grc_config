@@ -100,6 +100,54 @@ grcAssessmentUtilBase.prototype = {
 		}
 
 	},
+
+	importOldAsmt: function() {
+		var grBusApp = new GlideRecord('cmdb_ci_business_app');
+		var grAsmtInstance = new GlideRecord('asmt_assessment_instance');
+                var grAsmtInstQ = new GlideRecord('asmt_assessment_instance_question');
+		var busAppSysId;
+		var grCyris = new GlideRecord('x_631631_sc_grc_co_cyris_assessments');
+                var setToWip;
+		grCyris.query();
+
+		while (grCyris.next()) {
+            setToWip = false;
+			// Get the busapp for the common id
+			grBusApp.get('x_631631_grc_contr_common_id', grCyris.common_id);
+                        gs.info('busapp: ' + grBusApp.sys_id);
+			busAppSysId = grBusApp.sys_id;
+            grAsmtInstance = new GlideRecord('asmt_assessment_instance');
+			grAsmtInstance.addQuery('sn_grc_profile.applies_to', busAppSysId);
+                        grAsmtInstance.addQuery('sn_grc_item.name', grCyris.control_objective);
+                        grAsmtInstance.query();
+                        grAsmtInstance.next();
+                        gs.info('instance: ' + grAsmtInstance.sn_grc_item.content.name.getDisplayValue() + ' - ' + grCyris.control_objective);
+                        grAsmtInstQ = new GlideRecord('asmt_assessment_instance_question');
+                        grAsmtInstQ.addEncodedQuery('metric.name=Is the control implemented?');
+                        grAsmtInstQ.addQuery('instance', grAsmtInstance.sys_id);
+                        grAsmtInstQ.query();
+                        while (grAsmtInstQ.next()) {
+                            gs.info('Q: ' + grAsmtInstQ.sys_id + ' - ' + grAsmtInstQ.value + grCyris.response);
+                            grAsmtInstQ.value = grCyris.response == 'Yes' ? 1 : 0;
+                            grAsmtInstQ.update()
+                            setToWip = true;
+                        }
+                        if (!grCyris.comment.nil()) {
+                            grAsmtInstQ = new GlideRecord('asmt_assessment_instance_question');
+                            grAsmtInstQ.addEncodedQuery('metric.name=Comments');
+                            grAsmtInstQ.addQuery('instance', grAsmtInstance.sys_id);
+                            grAsmtInstQ.query();
+                            while(grAsmtInstQ.next()) {
+                                 grAsmtInstQ.string_value = grCyris.comment;
+                                 grAsmtInstQ.update();
+                            }
+                        }
+                        if (setToWip) {
+                            grAsmtInstance.state='wip';
+                            grAsmtInstance.update();
+                        }
+		}
+	},
 	
     type: 'grcAssessmentUtilBase'
 };]]></script>
@@ -107,13 +155,13 @@ grcAssessmentUtilBase.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-26 13:56:16</sys_created_on>
         <sys_id>646eb677971621108c6e7b771153af45</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>grcAssessmentUtilBase</sys_name>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>sys_script_include_646eb677971621108c6e7b771153af45</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-05-04 19:24:13</sys_updated_on>
+        <sys_updated_on>2024-09-06 13:57:17</sys_updated_on>
     </sys_script_include>
 </record_update>

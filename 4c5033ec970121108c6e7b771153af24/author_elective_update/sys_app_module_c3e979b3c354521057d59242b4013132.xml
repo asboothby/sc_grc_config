@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_imp_tmpl_x_631631_sc_grc_co_cyris_assessments</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-04 11:24:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c3e979b3c354521057d59242b4013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_app_module_c3e979b3c354521057d59242b4013132</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-04 11:24:26</sys_updated_on>
+        <timeline_page/>
+        <title>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>802db43b1b25f9109377eb9b2d4bcb8a</instance_id>
+        <instance_name>dev181184</instance_name>
+        <name>sys_app_module_c3e979b3c354521057d59242b4013132</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Import Sets">import_sets</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>u_imp_tmpl_x_631631_sc_grc_co_cyris_assessments</name><order>1100</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-04 11:24:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c3e979b3c354521057d59242b4013132</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</sys_name><sys_overrides/><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sys_app_module_c3e979b3c354521057d59242b4013132</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-04 11:24:26</sys_updated_on><timeline_page/><title>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1152462364</payload_hash>
+        <record_name>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</record_name>
+        <reverted_from/>
+        <source>77724faf474b0210c064b6bf016d435f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-04 11:24:26</sys_created_on>
+        <sys_id>0be979b3c354521057d59242b4013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191bcc757180000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-04 11:24:26</sys_updated_on>
+        <type>Module</type>
+        <update_guid>4fe979b314545210e37eb15fe7387f34</update_guid>
+        <update_guid_history>4fe979b314545210e37eb15fe7387f34:-1152462364</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Imp Tmpl X 631631 Sc Grc Co Cyris Assessments">ead3c6bfc354521057d59242b401314b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-04 12:07:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>1f06c92fb45e48d785f28b8456dfd8e1</sys_id>
+        <sys_metadata>c3e979b3c354521057d59242b4013132</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Imp Tmpl X 631631 Sc Grc Co Cyris Assessments</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_app_module_c3e979b3c354521057d59242b4013132</sys_update_name>
+        <sys_update_version display_value="sys_app_module_c3e979b3c354521057d59242b4013132">0be979b3c354521057d59242b4013135</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-04 12:07:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

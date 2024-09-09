@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d1f29ca8c364161057d59242b4013118" extends="sys_import_set_row" label="CyrisAssessments" max_length="40" name="x_631631_sc_grc_co_cyrisassessments" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Comment" label="Comment" max_length="73" name="u_comment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Common ID" label="Common ID" max_length="40" name="u_common_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Control Objective" label="Control Objective" max_length="40" name="u_control_objective" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Response" label="Response" max_length="40" name="u_response" type="string"/>
+    </element>
+</database>

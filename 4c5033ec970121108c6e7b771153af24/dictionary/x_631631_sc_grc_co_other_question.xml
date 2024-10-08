@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5fc8f74547415210eaa00c59e16d43c8" label="Other Question" max_length="40" name="x_631631_sc_grc_co_other_question" type="collection">
+        <element display="true" label="Question" max_length="100" name="question" type="string"/>
+        <element label="Category" max_length="40" name="category" type="string"/>
+    </element>
+</database>

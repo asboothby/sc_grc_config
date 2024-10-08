@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-03 15:56:13</sys_created_on>
+        <sys_id>033ec05d47055210eaa00c59e16d4300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_risk_factor_points.x_631631_sc_grc_co.risk_factor_points_user</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_security_acl display_value="x_631631_sc_grc_co_risk_factor_points">033e805d47055210eaa00c59e16d43fd</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_033ec05d47055210eaa00c59e16d4300</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-03 15:56:13</sys_updated_on>
+        <sys_user_role display_value="x_631631_sc_grc_co.risk_factor_points_user" name="x_631631_sc_grc_co.risk_factor_points_user">cb3e001947055210eaa00c59e16d43b6</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

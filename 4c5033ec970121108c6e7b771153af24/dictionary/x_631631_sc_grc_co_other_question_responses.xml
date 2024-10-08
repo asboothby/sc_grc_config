@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8b4b338d47415210eaa00c59e16d43ac" label="Other Question Responses" max_length="40" name="x_631631_sc_grc_co_other_question_responses" type="collection">
+        <element label="Response" max_length="40" name="response" type="boolean"/>
+        <element label="Entity" max_length="32" name="entity" reference="sn_grc_profile" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Question" max_length="32" name="question" reference="x_631631_sc_grc_co_other_question" type="reference"/>
+        <index name="index">
+            <element name="entity"/>
+        </index>
+        <index name="index2">
+            <element name="question"/>
+        </index>
+    </element>
+</database>

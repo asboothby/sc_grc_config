@@ -2,7 +2,7 @@
     <pa_widgets action="INSERT_OR_UPDATE">
         <aggregate/>
         <alignment>left</alignment>
-        <breakdown display_value="Entity">593cbefc53a12010bad1ddeeff7b12ea</breakdown>
+        <breakdown display_value="Points">50d07b14c37d1210aba6961d050131a5</breakdown>
         <breakdown_level2/>
         <breakdown_page_size>10</breakdown_page_size>
         <chart_color/>
@@ -20,9 +20,9 @@
         <column_target>false</column_target>
         <column_trend>true</column_trend>
         <compare_main_label/>
-        <compare_number_of_periods/>
+        <compare_number_of_periods>2</compare_number_of_periods>
         <compare_period>year</compare_period>
-        <cube_facts_table>undefined</cube_facts_table>
+        <cube_facts_table>x_631631_sc_grc_co_other_question_points</cube_facts_table>
         <cutoff>1</cutoff>
         <cutoff_condition>GTE</cutoff_condition>
         <cutoff_type>VAL</cutoff_type>
@@ -30,7 +30,7 @@
         <date_to>00000000</date_to>
         <default_indicator/>
         <description/>
-        <element/>
+        <element>unmatched</element>
         <element_level2/>
         <elements_filter/>
         <field/>
@@ -50,27 +50,27 @@
         <include_target>false</include_target>
         <include_thresholds>false</include_thresholds>
         <include_trend>false</include_trend>
-        <indicator display_value="Total Other Question Score">ef378ca247c51210eaa00c59e16d4329</indicator>
+        <indicator display_value="Location Score">e3bf675247411210eaa00c59e16d4321</indicator>
         <is_compare_chart>false</is_compare_chart>
         <lastscore_compare>previous_score</lastscore_compare>
-        <lastscore_periods_back/>
+        <lastscore_periods_back>1</lastscore_periods_back>
         <limit>50</limit>
         <lookup_name/>
         <manual_elements>false</manual_elements>
-        <max_color/>
+        <max_color display_value="Green">65b302aea9fe3dba00a530d65ecc2106</max_color>
         <multiple_elements_view/>
-        <name>Total Other Question Score</name>
+        <name>Location</name>
         <no_bulk_migration>false</no_bulk_migration>
         <number_of_records>5</number_of_records>
         <overlap_data_labels>false</overlap_data_labels>
-        <percentages>percentage_of_all_instances</percentages>
+        <percentages>no_percentages</percentages>
         <period>7d</period>
         <pivot_breakdown/>
         <pivot_elements_filter/>
         <related_dashboards>0</related_dashboards>
         <score_font_size>responsive</score_font_size>
         <scorecard_options>all</scorecard_options>
-        <show_bar>false</show_bar>
+        <show_bar>true</show_bar>
         <show_breakdown_selector>true</show_breakdown_selector>
         <show_change>true</show_change>
         <show_change_perc>true</show_change_perc>
@@ -84,7 +84,7 @@
         <show_range_selector>false</show_range_selector>
         <show_target>false</show_target>
         <show_top_x>10</show_top_x>
-        <show_total>false</show_total>
+        <show_total>true</show_total>
         <show_trend>true</show_trend>
         <show_visualization_selector>true</show_visualization_selector>
         <sort_direction>desc</sort_direction>
@@ -92,19 +92,19 @@
         <subtitle/>
         <sys_class_name>pa_widgets</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-10-07 14:04:42</sys_created_on>
+        <sys_created_on>2024-11-07 12:49:02</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>24fa582a470d1210eaa00c59e16d435a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Total Other Question Score</sys_name>
+        <sys_id>eaa2b394c3bd1210aba6961d0501318b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Location</sys_name>
         <sys_overrides/>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_update_name>pa_widgets_24fa582a470d1210eaa00c59e16d435a</sys_update_name>
+        <sys_update_name>pa_widgets_eaa2b394c3bd1210aba6961d0501318b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-30 11:37:46</sys_updated_on>
+        <sys_updated_on>2024-11-07 12:49:02</sys_updated_on>
         <tag/>
         <template>template1</template>
         <treemap_max_color display_value="Green">65b302aea9fe3dba00a530d65ecc2106</treemap_max_color>
@@ -119,5 +119,5 @@
         <yaxis_title/>
         <yaxis_to/>
     </pa_widgets>
-    <sys_translated_text action="delete_multiple" query="documentkey=24fa582a470d1210eaa00c59e16d435a"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=eaa2b394c3bd1210aba6961d0501318b"/>
 </record_update>

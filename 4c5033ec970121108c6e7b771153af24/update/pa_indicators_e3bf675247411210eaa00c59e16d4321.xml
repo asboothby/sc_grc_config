@@ -56,7 +56,7 @@ Category = Location</description>
         <roles/>
         <score_periods>-1</score_periods>
         <scores_format>kMGTPE</scores_format>
-        <scores_modified_at>2024-10-08 11:33:01</scores_modified_at>
+        <scores_modified_at>2024-11-25 12:33:01</scores_modified_at>
         <script/>
         <scripted>false</scripted>
         <show_delta>true</show_delta>
@@ -69,7 +69,7 @@ Category = Location</description>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e3bf675247411210eaa00c59e16d4321</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Location Score</sys_name>
         <sys_overrides/>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
@@ -77,7 +77,7 @@ Category = Location</description>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>pa_indicators_e3bf675247411210eaa00c59e16d4321</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-07 11:12:53</sys_updated_on>
+        <sys_updated_on>2024-11-07 19:48:03</sys_updated_on>
         <type>1</type>
         <unit display_value="#">17b365e2d7320100ba986f14ce6103ad</unit>
         <users/>

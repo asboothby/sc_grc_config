@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_631631_sc_grc_co.RiskUtilsAjaxBase</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>RiskUtilsAjaxBase</name>
+        <script><![CDATA[var RiskUtilsAjaxBase = Class.create();
+RiskUtilsAjaxBase.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    manageCurrencyFields: function() {
+		var risk_sys_id = this.getParameter('risk_sys_id');
+		gs.addInfoMessage('id: ' + risk_sys_id);
+		var grRisk = new GlideRecord('sn_risk_risk');
+		var entityTable = '';
+		var hideCurrencyFields = false;
+		grRisk.get(risk_sys_id);
+					gs.addInfoMessage(grRisk.profile);
+
+		if(grRisk) {
+			entityTable = grRisk.profile.table;
+			addInfoMessage('table: ' + entityTable);
+			switch (entityTable) {
+				case 'cmdb_ci_business_app':
+					hideCurrencyFields = true;
+					break;
+				default:
+					hideCurrencyFields = false;
+			}
+		}
+		gs.addInfoMessage('result: ' + JSON.stringify(hideCurrencyFields));
+		return JSON.stringify(hideCurrencyFields());
+	},
+	
+	type: 'RiskUtilsAjaxBase'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-31 11:34:57</sys_created_on>
+        <sys_id>28441306c3edd610aba6961d05013128</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>RiskUtilsAjaxBase</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_include_28441306c3edd610aba6961d05013128</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-31 16:16:53</sys_updated_on>
+    </sys_script_include>
+</record_update>

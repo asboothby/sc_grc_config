@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_indicator_breakdowns">
     <pa_indicator_breakdowns action="INSERT_OR_UPDATE">
-        <breakdown display_value="Entity">593cbefc53a12010bad1ddeeff7b12ea</breakdown>
+        <breakdown display_value="Entities">eaf0dd64c331d210aba6961d0501318b</breakdown>
         <display>true</display>
         <indicator display_value="Location Score">e3bf675247411210eaa00c59e16d4321</indicator>
-        <order>100</order>
+        <order/>
         <sql_statement/>
         <sys_class_name>pa_indicator_breakdowns</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-10-07 10:56:21</sys_created_on>
+        <sys_created_on>2024-11-07 19:48:03</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>29ffaf5e47011210eaa00c59e16d43b0</sys_id>
+        <sys_id>90f2d52cc331d210aba6961d0501318c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Entity.Location Score</sys_name>
+        <sys_name>Entities.Location Score</sys_name>
         <sys_overrides/>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_update_name>pa_indicator_breakdowns_29ffaf5e47011210eaa00c59e16d43b0</sys_update_name>
+        <sys_update_name>pa_indicator_breakdowns_90f2d52cc331d210aba6961d0501318c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-07 10:56:21</sys_updated_on>
+        <sys_updated_on>2024-11-07 19:48:03</sys_updated_on>
     </pa_indicator_breakdowns>
 </record_update>

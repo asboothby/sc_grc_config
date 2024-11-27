@@ -13,8 +13,11 @@ ThingUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
 
 	getThing: function() {
+		var id = this.getParameter('section_id');
+		var endPoint = 'https://jsonplaceholder.typicode.com/todos/' + id;
+
 var request = new sn_ws.RESTMessageV2();
-request.setEndpoint('https://jsonplaceholder.typicode.com/todos/1');
+request.setEndpoint(endPoint);
 request.setHttpMethod('GET'); //mention here POST or GET
 
 request.setRequestHeader("Accept","application/json");
@@ -62,13 +65,13 @@ return status;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-11-21 19:48:37</sys_created_on>
         <sys_id>e454d9c9c38a5a10aba6961d050131f9</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>ThingUtils</sys_name>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>sys_script_include_e454d9c9c38a5a10aba6961d050131f9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-22 15:20:45</sys_updated_on>
+        <sys_updated_on>2024-11-26 17:33:37</sys_updated_on>
     </sys_script_include>
 </record_update>

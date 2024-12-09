@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-05 19:58:08</sys_created_on>
+        <sys_id>ffb1ed61c3529210aba6961d0501314f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>name</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_db_view_table_field_ffb1ed61c3529210aba6961d0501314f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-05 19:58:08</sys_updated_on>
+        <table>sn_grc_profile</table>
+        <view_table display_value="sn_grc_profile">f7c0ed61c3529210aba6961d05013187</view_table>
+    </sys_db_view_table_field>
+</record_update>

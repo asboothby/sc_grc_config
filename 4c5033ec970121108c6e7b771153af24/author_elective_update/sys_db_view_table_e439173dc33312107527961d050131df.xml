@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>true</left_join>
+        <order>400</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 12:55:07</sys_created_on>
+        <sys_id>e439173dc33312107527961d050131df</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_answer_types</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_db_view_table_e439173dc33312107527961d050131df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 17:03:40</sys_updated_on>
+        <table>x_631631_sc_grc_co_answer_types</table>
+        <variable_prefix>atm</variable_prefix>
+        <view display_value="x_631631_sc_grc_co_controlanswertype">9371a470c3bf52107527961d050131e0</view>
+        <where_clause>atm_function=ctrl_item_function&amp;&amp;ctrl_failed_indicators=0&amp;&amp;ctrl_passed_indicators=0&amp;&amp;aiq_string_value='Answered Yes by Trigger Question'&amp;&amp;atm_string_value='Answered Yes by Trigger Question'</where_clause>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sys_db_view_table_e439173dc33312107527961d050131df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>true</left_join><order>400</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-19 12:55:07</sys_created_on><sys_id>e439173dc33312107527961d050131df</sys_id><sys_mod_count>12</sys_mod_count><sys_name>x_631631_sc_grc_co_answer_types</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sys_db_view_table_e439173dc33312107527961d050131df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-19 17:03:40</sys_updated_on><table>x_631631_sc_grc_co_answer_types</table><variable_prefix>atm</variable_prefix><view display_value="x_631631_sc_grc_co_controlanswertype">9371a470c3bf52107527961d050131e0</view><where_clause>atm_function=ctrl_item_function&amp;&amp;ctrl_failed_indicators=0&amp;&amp;ctrl_passed_indicators=0&amp;&amp;aiq_string_value='Answered Yes by Trigger Question'&amp;&amp;atm_string_value='Answered Yes by Trigger Question'</where_clause></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-1297218406</payload_hash>
+        <record_name>x_631631_sc_grc_co_answer_types</record_name>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 17:03:40</sys_created_on>
+        <sys_id>eea29006c37712107527961d0501317c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1951f2a4cf50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 17:03:40</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>66a29006f9771210bc56689a1aeecf7c</update_guid>
+        <update_guid_history>66a29006f9771210bc56689a1aeecf7c:-1297218406,58dc7f3946f31210d50dfd215b782bc1:-562668199,5a867371c8f31210367c9dc9aed19e2a:1383548165,5ce4bb7981b3121073159e97766966d5:-1948849708,140ee7b5d0b31210a8d77ed64ebcf92f:1383548165,54cdef7500b31210271ba488bbabb30d:629994192,c4d6e37d677312108d757b5cd5ff2d42:1197546314,81862f3d27731210df998c14ed4d63f8:-1449341785,2aab53fddf33121039449389b418f8e4:1203587690,bbaad3bd0833121075e97416c0474a3a:-559268882,0a7a9f7d963312109eaad50c2e6da0b5:-1123246842,cdd9137d753312103927fdad66778d57:-2070413012,a9c9137d9b3312105b8e21828ae58842:1837672829</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 17:22:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>60e577f2132045e6b7c868f8f4860b49</sys_id>
+        <sys_metadata>e439173dc33312107527961d050131df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_answer_types</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent display_value="x_631631_sc_grc_co_controlanswertype">9371a470c3bf52107527961d050131e0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_e439173dc33312107527961d050131df</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_e439173dc33312107527961d050131df">eea29006c37712107527961d0501317c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 17:22:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

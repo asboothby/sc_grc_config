@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>true</left_join>
+        <order>300</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 15:55:19</sys_created_on>
+        <sys_id>15924ccec3f312107527961d05013169</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_answer_types</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_db_view_table_15924ccec3f312107527961d05013169</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 16:57:03</sys_updated_on>
+        <table>x_631631_sc_grc_co_answer_types</table>
+        <variable_prefix>man</variable_prefix>
+        <view display_value="x_631631_sc_grc_co_controlanswertype">9371a470c3bf52107527961d050131e0</view>
+        <where_clause>man_function=ctrl_item_function&amp;&amp;ctrl_failed_indicators=0&amp;&amp;ctrl_passed_indicators=0&amp;&amp;(aiq_string_value='Unable to implement')</where_clause>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sys_db_view_table_15924ccec3f312107527961d05013169</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>true</left_join><order>300</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-19 15:55:19</sys_created_on><sys_id>15924ccec3f312107527961d05013169</sys_id><sys_mod_count>11</sys_mod_count><sys_name>x_631631_sc_grc_co_answer_types</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sys_db_view_table_15924ccec3f312107527961d05013169</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-19 16:57:03</sys_updated_on><table>x_631631_sc_grc_co_answer_types</table><variable_prefix>man</variable_prefix><view display_value="x_631631_sc_grc_co_controlanswertype">9371a470c3bf52107527961d050131e0</view><where_clause>man_function=ctrl_item_function&amp;&amp;ctrl_failed_indicators=0&amp;&amp;ctrl_passed_indicators=0&amp;&amp;(aiq_string_value='Unable to implement')</where_clause></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-1397583928</payload_hash>
+        <record_name>x_631631_sc_grc_co_answer_types</record_name>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 16:57:03</sys_created_on>
+        <sys_id>61211082c37712107527961d05013165</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1951f243d6d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 16:57:03</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>e5211082a1771210c5e7ddec381cff64</update_guid>
+        <update_guid_history>e5211082a1771210c5e7ddec381cff64:-1397583928,17bfc402447712106b55fba2f0933e49:-656109559,3f2f88ce04371210c49967ef36267927:221000707,928e8c8e533712109f30177f5af86f48:-1056559494,023a484a6b371210cdd53b5944b0f2a6:-1344579520,9d49840ac4371210e25c8b686f0cac4c:-1101569146,3ca848c6a237121061ef2c28d511bde3:-1056559494,7b888846e537121010ab3d7b8066c86a:-91281296,6a7884c6ce3712101f866edb44d2ef07:1725134110,efc5ccc27937121038d2e93447634a70:-1011752559,fe03c8cab2f312103f2e78c0279bc600:-1430927824,51030802b33712101c78f96621c50438:-1417024129</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-19 17:21:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>624f63e119ea488ca95b0551482d7990</sys_id>
+        <sys_metadata>15924ccec3f312107527961d05013169</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co_answer_types</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent display_value="x_631631_sc_grc_co_controlanswertype">9371a470c3bf52107527961d050131e0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_15924ccec3f312107527961d05013169</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_15924ccec3f312107527961d05013169">61211082c37712107527961d05013165</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-19 17:21:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

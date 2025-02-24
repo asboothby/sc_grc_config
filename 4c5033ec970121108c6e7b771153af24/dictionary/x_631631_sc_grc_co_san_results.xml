@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a10b59b9c36712107527961d05013132" label="San Results" max_length="40" name="x_631631_sc_grc_co_san_results" type="collection">
+        <element label="End Point" max_length="40" name="end_point" type="boolean"/>
+        <element label="Last Scan Date" max_length="40" name="last_scan_date" type="glide_date"/>
+        <element attributes="format=none" label="Common ID" max_length="40" name="common_id" type="integer"/>
+        <element label="Logging" max_length="40" name="logging" type="boolean"/>
+        <element label="CI Count" max_length="40" name="ci_count" type="integer"/>
+    </element>
+</database>

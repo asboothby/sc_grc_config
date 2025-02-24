@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="2c9eddb7c37612107527961d0501316a" extends="sn_grc_item" label="Control" max_length="40" name="sn_compliance_control" type="collection">
+        <element choice="3" default="manual" label="Answer Method" max_length="40" name="x_631631_sc_grc_co_answer_method" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Manual" value="manual"/>
+                <element inactive_on_update="false" label="Indicator" value="indicator"/>
+                <element inactive_on_update="false" label="Trigger Question" value="trigger_question"/>
+            </choice>
+        </element>
+    </element>
+</database>

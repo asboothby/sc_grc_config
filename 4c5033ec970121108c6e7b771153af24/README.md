@@ -27,3 +27,4 @@ If you find yourself unable to import your repository due to the presence of fil
    * GRC Contracts and Suppliers
    * System Import Sets
    * Configuration Management (CMDB)
+   * GRC: Policy and Compliance Management

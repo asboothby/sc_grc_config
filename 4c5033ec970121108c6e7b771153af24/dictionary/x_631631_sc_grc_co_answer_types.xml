@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="06c6f519c33b52107527961d0501311a" label="Answer Types" max_length="40" name="x_631631_sc_grc_co_answer_types" type="collection">
+        <element label="Group By" max_length="40" name="group_by" type="string"/>
+        <element label="String Value" max_length="500" name="string_value" type="string"/>
+        <element label="Function" max_length="100" name="function" type="integer"/>
+    </element>
+</database>

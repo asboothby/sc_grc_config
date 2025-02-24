@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sn_compliance_control" version="2" view="RPT2a0c8d0ec37b12107527961d05013131">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>260c014ec37b12107527961d05013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>a60c014ec37b12107527961d05013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>profile</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>2a0c014ec37b12107527961d05013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>item_function</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>aa0c014ec37b12107527961d05013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>2e0c014ec37b12107527961d05013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>ae0c014ec37b12107527961d05013171</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>exempt</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>220c014ec37b12107527961d05013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>owner</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>a20c014ec37b12107527961d05013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>260c014ec37b12107527961d05013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>content</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>a60c014ec37b12107527961d05013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>attestation</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>2a0c014ec37b12107527961d05013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>failed_indicators</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>aa0c014ec37b12107527961d05013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>passed_indicators</element>
+            <list_id display_value="sn_compliance_control" element="NULL" name="sn_compliance_control" parent="NULL" relationship="NULL" sys_domain="global" view="260c014ec37b12107527961d0501316f">2a0c014ec37b12107527961d05013170</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_id>2e0c014ec37b12107527961d05013172</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sn_compliance_control</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-02-19 21:14:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2a0c014ec37b12107527961d05013170</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_compliance_control</sys_name>
+            <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+            <sys_update_name>sys_ui_list_sn_compliance_control_RPT2a0c8d0ec37b12107527961d05013131</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-02-19 21:14:21</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt2a0c8d0ec37b12107527961d05013131" name="RPT2a0c8d0ec37b12107527961d05013131">260c014ec37b12107527961d0501316f</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

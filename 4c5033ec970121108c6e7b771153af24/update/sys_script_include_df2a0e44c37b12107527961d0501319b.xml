@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_631631_sc_grc_co.IssueUtilBase</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>IssueUtilBase</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var IssueUtilBase = Class.create();
+
+IssueUtilBase.prototype = {
+    initialize: function() {
+
+        this.POLICY_EXCEPTION_NEW_STATE = 1; //Considered an Open State
+        this.POLICY_EXCEPTION_ANALYZE_STATE = 2; //Considered an Open State
+        this.POLICY_EXCEPTION_CLOSED_STATE = 3;
+        this.POLICY_EXCEPTION_AWAITING_APPROVAL_STATE = 6; //Considered an Open State
+        this.POLICY_EXCEPTION_REJECTED_STATE = 7;
+        this.POLICY_EXCEPTION_APPROVED_STATE = 8; //Considered an Open State
+        this.POLICY_EXCEPTION_RISK_ASSESSMENT_STATE = 10;
+        this.POLICY_EXCEPTION_REVIEW_STATE = 12; //Considered an Open State
+
+        this.POLICY_EXCEPTION_CANCELED_SUBSTATE = 30; //Considered an Open State
+
+        this.ISSUE_REVIEW_STATE = 0;
+        this.ISSUE_NEW_STATE = 1;
+        this.ISSUE_ANALYZE_STATE = 2;
+        this.ISSUE_CLOSED_COMPLETE_STATE = 3;
+        this.ISSUE_CLOSED_INCOMPLETE_STATE = 4;
+        this.ISSUE_RESPOND_STATE = 5;
+
+        this.ISSUE_RESPONSE_REMEDIATE_STATE = 1;
+        this.ISSUE_RESPONSE_ACCEPT_STATE = 2;
+
+        this.REMEDIATION_TASK_OPEN_STATE = 1; //Considered an Open State
+        this.REMEDIATION_TASK_RESPOND_STATE = 2; //Considered an Open State
+        this.REMEDIATION_TASK_CLOSED_COMPLETE_STATE = 3;
+        this.REMEDIATION_TASK_CLOSED_INCOMPLETE_STATE = 4;
+        this.REMEDIATION_TASK_CLOSED_CANCELLED_STATE = 7;
+        this.REMEDIATION_TASK_WORK_IN_PROGRESS_STATE = 8; //Considered an Open State
+        this.REMEDIATION_TASK_REVIEW_STATE = 9;
+
+    },
+
+    ProcessActionPlanByIssue: function(Issue) { 
+
+		var queryString = "stateIN" + this.REMEDIATION_TASK_CLOSED_COMPLETE_STATE + "," + 
+		this.REMEDIATION_TASK_CLOSED_INCOMPLETE_STATE + "," +
+		this.REMEDIATION_TASK_CLOSED_CANCELLED_STATE; //TSB02
+
+        var remediation_task = new GlideRecord('sn_grc_task');
+        remediation_task.addQuery('issue.sys_id', '=', Issue);
+        //remediation_task.addQuery('state', '=', this.REMEDIATION_TASK_CLOSED_COMPLETE_STATE); //Closed Complete
+		remediation_task.addEncodedQuery(queryString); //Closed Complete, Closed Incomplete, Closed Cancelled - TSB02
+        remediation_task.setLimit(1);
+        remediation_task.orderByDesc('sys_updated_on');
+        remediation_task.query();
+
+        if (remediation_task.next()) {
+
+            var issue = new GlideRecord('sn_grc_issue');
+            issue.addQuery('sys_id', '=', Issue);
+            issue.query();
+
+            if (issue.next()) {
+                //var _action_plan = issue.getValue('action_plan');
+                //issue.work_notes = _action_plan;
+                issue.action_plan = "";
+                issue.update();
+            }
+
+        }
+
+    },
+
+    AttestationQuestionChange: function(oldValue, newValue, metric_id) {
+        var ret_val = false;
+        if (oldValue == 0 && (newValue == 1 || newValue == 2)) {
+            var grMetric = new GlideRecord('asmt_metric');
+            grMetric.addQuery('sys_id', metric_id);
+            grMetric.query();
+            if (grMetric.next()) {
+                var question = grMetric.getValue('question');
+                if (question == "Is the control Implemented?") {
+                    ret_val = true;
+                }
+            }
+        }
+        return ret_val;
+
+    },
+
+    UpdateIssueAssignToByEntity: function(EntityID, NewSupportedBy, OldSupportedBy) {
+
+        var compliance_control = new GlideRecord('sn_compliance_control'); //Control
+        compliance_control.addEncodedQuery('profile.sys_id=' + EntityID);
+        compliance_control.query();
+        while (compliance_control.next()) {
+
+            var control = compliance_control.getValue('sys_id');
+
+            var issue = new GlideRecord('sn_grc_issue');
+            issue.addQuery('item.sys_id', '=', control);
+            issue.addQuery('assigned_to', '=', OldSupportedBy);
+            issue.addQuery('state', 'NOT IN', '3,4'); //Closed Complete,Closed Incomplete
+            issue.query();
+
+            if (issue.next()) {
+
+                issue.assigned_to = NewSupportedBy; //Set New Supported By
+                issue.update();
+
+            }
+
+        }
+
+        return true;
+
+    },
+    /**********************************************************************************************************************
+     * Change history:
+     * Change ID	Name				Date		Description
+     * ES01			Evan Somerstein		04/26/24	GRC_IROC-5082 - Updating Issue Query to only look at the active Issue
+     * ES02			Evan Somerstein		06/20/24	GRC_IROC-5746 - Updating to clear the exempt field from the sn_compliance_control
+     **********************************************************************************************************************/
+    CloseIssueRemediationTaskPolicyExceptionByControl: function(Control) {
+
+        var issue = new GlideRecord('sn_grc_issue');
+        //issue.addQuery('item.sys_id', '=', Control);
+        issue.addQuery('item', '=', Control);
+        issue.addQuery('active', '=', 'true'); // ES01 - Close only the active issue. Other issues are already closed
+        issue.query();
+
+        if (issue.next()) {
+            var Issue = issue.getValue('sys_id');
+
+            var policyExceptionResult = this.ClosePolicyExceptionByIssue(Issue);
+            var remediationTaskResult = this.CloseRemediationTaskByIssue(Issue);
+
+            if (issue.state != this.ISSUE_CLOSED_COMPLETE_STATE) { //Issue Not In Closed Complete
+                issue.state = this.ISSUE_CLOSED_INCOMPLETE_STATE; //Closed Incomplete
+                issue.update();
+            }
+            // ES02 Start
+            // Get the Compliance Control record
+            var grControl = new GlideRecord('sn_compliance_control');
+            grControl.addQuery('sys_id', Control);
+            grControl.query();
+            if (grControl.next()) {
+                // Clear the exempt flag
+                grControl.setValue('exempt', false);
+                grControl.update();
+            }
+            // ES02 ENd
+
+        }
+
+        return true;
+
+    },
+
+    GetPolicyExceptionByIssue: function(Issue) {
+
+        PolicyExceptionArray = [];
+
+        var policy_exception = new GlideRecord('sn_compliance_policy_exception');
+        policy_exception.addQuery('issue.sys_id', '=', Issue);
+        policy_exception.addQuery('state', 'IN', '1,2,6,12'); //New,Analyze,Awaiting Approval,Review
+        policy_exception.setLimit(1);
+        policy_exception.orderByDesc('sys_updated_on');
+        policy_exception.query();
+
+        while (policy_exception.next()) {
+
+            var _number = policy_exception.getValue('number');
+            var _policy_exception_sys_id = policy_exception.getValue('sys_id');
+            var _state = policy_exception.getValue('state');
+            var _state_display = policy_exception.getDisplayValue('state');
+
+            var PolicyExceptionObject = {
+                sys_id: _policy_exception_sys_id,
+                number: _number,
+                state: _state,
+                state_display: _state_display
+            };
+
+            PolicyExceptionArray.push(PolicyExceptionObject);
+
+        }
+
+        return PolicyExceptionArray;
+    },
+
+    //GRC_IROC-5252
+    GetMostRecentPolicyExceptionByIssue: function(Issue) {
+
+        PolicyExceptionArray = [];
+
+        var policy_exception = new GlideRecord('sn_compliance_policy_exception');
+        policy_exception.addQuery('issue.sys_id', '=', Issue);
+        //policy_exception.addQuery('state', 'IN', '1,2,6,12'); //New,Analyze,Awaiting Approval,Review
+        policy_exception.setLimit(1);
+        policy_exception.orderByDesc('sys_updated_on');
+        policy_exception.query();
+
+        while (policy_exception.next()) {
+
+            var _number = policy_exception.getValue('number');
+            var _policy_exception_sys_id = policy_exception.getValue('sys_id');
+            var _state = policy_exception.getValue('state');
+            var _state_display = policy_exception.getDisplayValue('state');
+
+            var PolicyExceptionObject = {
+                sys_id: _policy_exception_sys_id,
+                number: _number,
+                state: _state,
+                state_display: _state_display
+            };
+
+            PolicyExceptionArray.push(PolicyExceptionObject);
+
+        }
+
+        return PolicyExceptionArray;
+    },
+
+    GetAllPolicyExceptionByIssue: function(Issue) {
+
+        PolicyExceptionArray = [];
+
+        var policy_exception = new GlideRecord('sn_compliance_policy_exception');
+        policy_exception.addQuery('issue.sys_id', '=', Issue);
+        policy_exception.orderByDesc('sys_updated_on');
+        policy_exception.query();
+
+        while (policy_exception.next()) {
+
+            var _number = policy_exception.getValue('number');
+            var _policy_exception_sys_id = policy_exception.getValue('sys_id');
+            var _state = policy_exception.getValue('state');
+            var _state_display = policy_exception.getDisplayValue('state');
+
+            var PolicyExceptionObject = {
+                sys_id: _policy_exception_sys_id,
+                number: _number,
+                state: _state,
+                state_display: _state_display
+            };
+
+            PolicyExceptionArray.push(PolicyExceptionObject);
+
+        }
+
+        return PolicyExceptionArray;
+    },
+
+    ClosePolicyExceptionByIssue: function(Issue) {
+
+        var policy_exception = new GlideRecord('sn_compliance_policy_exception');
+        policy_exception.addQuery('issue.sys_id', '=', Issue);
+        policy_exception.addQuery('state', 'NOT IN', '3,7'); //Closed,Rejected
+        policy_exception.orderByDesc('sys_updated_on');
+        policy_exception.query();
+
+        while (policy_exception.next()) {
+
+            policy_exception.state = 3; //Closed
+            policy_exception.substate = 30; //Canceled
+            policy_exception.update();
+
+        }
+
+        return true;
+
+    },
+
+    GetRemediationTaskByIssue: function(Issue) {
+
+        RemediationTaskArray = [];
+
+        var remediation_task = new GlideRecord('sn_grc_task');
+        remediation_task.addQuery('issue.sys_id', '=', Issue);
+        remediation_task.addQuery('state', 'IN', '1,2,8'); //Open,Respond,Work in Progress
+        remediation_task.setLimit(1);
+        remediation_task.orderByDesc('sys_updated_on');
+        remediation_task.query();
+
+        while (remediation_task.next()) {
+
+            var _number = remediation_task.getValue('number');
+            var _remediation_task_sys_id = remediation_task.getValue('sys_id');
+            var _state = remediation_task.getValue('state');
+            var _state_display = remediation_task.getDisplayValue('state');
+
+            var RemediationTaskObject = {
+                sys_id: _remediation_task_sys_id,
+                number: _number,
+                state: _state,
+                state_display: _state_display
+            };
+
+            RemediationTaskArray.push(RemediationTaskObject);
+
+        }
+
+        return RemediationTaskArray;
+    },
+
+    GetMostRecentRemediationTaskByIssue: function(Issue) {
+
+        RemediationTaskArray = [];
+
+        var remediation_task = new GlideRecord('sn_grc_task');
+        remediation_task.addQuery('issue.sys_id', '=', Issue);
+        //remediation_task.addQuery('state', 'IN', '1,2,8'); //Open,Respond,Work in Progress
+        remediation_task.setLimit(1);
+        remediation_task.orderByDesc('sys_updated_on');
+        remediation_task.query();
+
+        while (remediation_task.next()) {
+
+            var _number = remediation_task.getValue('number');
+            var _remediation_task_sys_id = remediation_task.getValue('sys_id');
+            var _state = remediation_task.getValue('state');
+            var _state_display = remediation_task.getDisplayValue('state');
+
+            var RemediationTaskObject = {
+                sys_id: _remediation_task_sys_id,
+                number: _number,
+                state: _state,
+                state_display: _state_display
+            };
+
+            RemediationTaskArray.push(RemediationTaskObject);
+
+        }
+
+        return RemediationTaskArray;
+    },
+
+    GetAllRemediationTaskByIssue: function(Issue) {
+
+        RemediationTaskArray = [];
+
+        var remediation_task = new GlideRecord('sn_grc_task');
+        remediation_task.addQuery('issue.sys_id', '=', Issue);
+        remediation_task.orderByDesc('sys_updated_on');
+        remediation_task.query();
+
+        while (remediation_task.next()) {
+
+            var _number = remediation_task.getValue('number');
+            var _remediation_task_sys_id = remediation_task.getValue('sys_id');
+            var _state = remediation_task.getValue('state');
+            var _state_display = remediation_task.getDisplayValue('state');
+
+            var RemediationTaskObject = {
+                sys_id: _remediation_task_sys_id,
+                number: _number,
+                state: _state,
+                state_display: _state_display
+            };
+
+            RemediationTaskArray.push(RemediationTaskObject);
+
+        }
+
+        return RemediationTaskArray;
+    },
+
+    CloseRemediationTaskByIssue: function(Issue) {
+
+        var remediation_task = new GlideRecord('sn_grc_task');
+        remediation_task.addQuery('issue.sys_id', '=', Issue);
+        remediation_task.addQuery('state', 'NOT IN', '3,4,7'); //Closed Complete,Closed Incomplete,Closed Cancelled
+        remediation_task.orderByDesc('sys_updated_on');
+        remediation_task.query();
+
+        while (remediation_task.next()) {
+            remediation_task.state = 4; //Closed Incomplete
+            remediation_task.update();
+
+        }
+
+        return true;
+
+    },
+
+    GetClosedCompleteRemediationTaskByIssue: function(Issue) {
+
+        RemediationTaskArray = [];
+
+        var remediation_task = new GlideRecord('sn_grc_task');
+        remediation_task.addQuery('issue.sys_id', '=', Issue);
+        remediation_task.addQuery('state', 'IN', '3,4,7'); //Closed Complete,Closed Incomplete,Closed Cancelled
+        remediation_task.setLimit(1);
+        remediation_task.orderByDesc('sys_updated_on');
+        remediation_task.query();
+
+        while (remediation_task.next()) {
+
+            var _number = remediation_task.getValue('number');
+            var _remediation_task_sys_id = remediation_task.getValue('sys_id');
+            var _state = remediation_task.getValue('state');
+            var _state_display = remediation_task.getDisplayValue('state');
+
+            var RemediationTaskObject = {
+                sys_id: _remediation_task_sys_id,
+                number: _number,
+                state: _state,
+                state_display: _state_display
+            };
+
+            RemediationTaskArray.push(RemediationTaskObject);
+
+        }
+
+        return RemediationTaskArray;
+    },
+    /**********************************************************************************************************************
+     * Change history:
+     * Change ID	Name				Date		Description
+     * ES01			Evan Somerstein		04/26/24	GRC_IROC-5082 - Updating to only use the most recent remediation task
+     * 												and policy exception for determining status
+     * ALC01		Alex Leon			05/16/24	GRC_IROC-5253 - _state != 4 was remove to allow LM Control Compliance status to change to 
+     * 												Not Compliant when an Issue is Closed Incomplete
+     * TSB01		Torrance Brown      05/26/24    GRC_IROC-5252 - Set LM Control Compliance Status to Compliant With Policy Exception
+     **********************************************************************************************************************/
+
+    SetControlComplianceStatusByIssue: function(Issue) {
+
+        var entityUtilBase = new EntityUtilBase();
+        var result = null;
+        var SetIssueToReview = false;
+
+        var issue = new GlideRecord('sn_grc_issue');
+        issue.addQuery('sys_id', '=', Issue);
+        issue.query();
+
+        if (issue.next()) {
+            var _item = issue.getValue('item');
+            var _response = issue.getValue('response');
+            var _state = issue.getValue('state');
+
+            // var RemediationTaskArray = this.GetRemediationTaskByIssue(Issue); - ES01
+            var MostRecentRemediationTaskArray = this.GetMostRecentRemediationTaskByIssue(Issue); // - ES01
+            // var ClosedCompleteRemediationTaskArray = this.GetClosedCompleteRemediationTaskByIssue(Issue); - ES01
+
+            ///			if(RemediationTaskArray.length > 0 || ClosedCompleteRemediationTaskArray.length > 0) { - ES01
+            if (MostRecentRemediationTaskArray.length > 0) { // - ES01
+
+                if (_response == 1 && _state == 5) { // Open Remediation Task Exists With Respond/Remediate Action Plan
+                    result = entityUtilBase.SetControlComplianceStatus(_item, 'compliant_with_poam');
+                    /*
+                    					if(ClosedCompleteRemediationTaskArray[0].state == 3 || 
+                    					ClosedCompleteRemediationTaskArray[0].state == 4 || 
+                    					ClosedCompleteRemediationTaskArray[0].state == 7) { // Check If Closed Complete,Closed Incomplete,Closed Cancelled 
+                    					- ES 01 */
+                    if (MostRecentRemediationTaskArray[0].state == 3 ||
+                        MostRecentRemediationTaskArray[0].state == 4 ||
+                        MostRecentRemediationTaskArray[0].state == 7) { // Check If Closed Complete,Closed Incomplete,Closed Cancelled
+                        SetIssueToReview = true;
+                    }
+                } else if (_state == 3) { // Check If Issue In Closed Complete With A Remediation Task
+                    result = entityUtilBase.SetControlComplianceStatus(_item, 'compliant');
+                    // ES01 - Do not set compliance status if issue is closed incomplete.  Status will be set elsewhere
+                } else if (_response == 1 && (_state != 0 && _state != 5)) { // Check If Issue Not In Review or Respond or Closed Incomplete
+                    //ALC01 - _state != 4 remove
+                    result = entityUtilBase.SetControlComplianceStatus(_item, 'not_compliant');
+                }
+
+            } else {
+
+                //var PolicyExceptionArray = this.GetPolicyExceptionByIssue(Issue);
+                var MostRecentPolicyExceptionArray = this.GetMostRecentPolicyExceptionByIssue(Issue); //GRC_IROC-5252
+
+                if (MostRecentPolicyExceptionArray.length > 0) { // No Open Remediation Task Exists and Open Policy Exception Exists
+
+                    if (MostRecentPolicyExceptionArray[0].state == this.POLICY_EXCEPTION_APPROVED_STATE) { //TSB01
+
+                        result = entityUtilBase.SetControlComplianceStatus(_item, 'compliant_with_policy_exception');
+
+                    } else {
+
+                        result = entityUtilBase.SetControlComplianceStatus(_item, 'not_compliant');
+
+                    }
+
+                } else {
+
+                    result = entityUtilBase.SetControlComplianceStatus(_item, 'not_compliant');
+
+                    /*if(current.response == 0) {
+                    	result = entityUtilBase.SetControlComplianceStatus(current.item, 'not_compliant');
+                    }
+                    else if(current.response == 1 && current.state != 5) {
+                    	result = entityUtilBase.SetControlComplianceStatus(current.item, 'not_compliant');
+                    }
+                    else if(current.response == 2) {
+                    	result = entityUtilBase.SetControlComplianceStatus(current.item, 'not_compliant');
+                    }
+                    else if(current.response == 3) {
+                    	result = entityUtilBase.SetControlComplianceStatus(current.item, 'not_compliant');
+                    }
+                    else if(current.response == 4) {
+                    	result = entityUtilBase.SetControlComplianceStatus(current.item, 'not_compliant');
+                    }
+                    else if(current.response == 5) {
+                    	result = entityUtilBase.SetControlComplianceStatus(current.item, 'not_compliant');
+                    }*/
+
+                }
+
+            }
+
+            if (SetIssueToReview) { // Set Issue To Review
+                issue.state = 0;
+                issue.update();
+            }
+
+        }
+
+        return true;
+
+    },
+
+    remediationTaskExists: function(parentSysId) {
+        var encodedQuery = "issue=" + parentSysId +
+            "^state=" + this.REMEDIATION_TASK_OPEN_STATE +
+            "^ORstate=" + this.REMEDIATION_TASK_RESPOND_STATE +
+            "^ORstate=" + this.REMEDIATION_TASK_WORK_IN_PROGRESS_STATE +
+            "^ORstate=" + this.REMEDIATION_TASK_REVIEW_STATE;
+
+        var isRemediationTaskFound = false;
+        var remediationTask = new GlideAggregate('sn_grc_task');
+        remediationTask.setGroup(false);
+        remediationTask.addAggregate('COUNT', 'sys_mod_count');
+        remediationTask.addEncodedQuery(encodedQuery);
+        remediationTask.query();
+
+        if (remediationTask.next()) {
+            var remediationTaskCount = remediationTask.getAggregate('COUNT', 'sys_mod_count');
+
+            if (remediationTaskCount == 0)
+                isRemediationTaskFound = false;
+            else
+                isRemediationTaskFound = true;
+        }
+
+        return isRemediationTaskFound;
+    },
+
+    /**********************************************************************************************************************
+     * Change history:
+     * Change ID	Name				Date		Description
+     * TAB01		Tonny Boesenbaek	05/15/2024	GRC_IROC-5228 - 'Approved' state is now considered a closed state
+     **********************************************************************************************************************/
+    policyExceptionExists: function(parentSysId) {
+        var encodedQuery = "issue=" + parentSysId +
+            "^state=" + this.POLICY_EXCEPTION_NEW_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_ANALYZE_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_AWAITING_APPROVAL_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_RISK_ASSESSMENT_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_REVIEW_STATE;
+        //"^ORstate=" + this.POLICY_EXCEPTION_APPROVED_STATE; TAB01
+
+        var isPolicyExceptionFound = false;
+        var policyException = new GlideAggregate('sn_compliance_policy_exception');
+        policyException.setGroup(false);
+        policyException.addAggregate('COUNT', 'sys_mod_count');
+        policyException.addEncodedQuery(encodedQuery);
+        policyException.query();
+
+        if (policyException.next()) {
+            var policyExceptionCount = policyException.getAggregate('COUNT', 'sys_mod_count');
+
+            if (policyExceptionCount == 0)
+                isPolicyExceptionFound = false;
+            else
+                isPolicyExceptionFound = true;
+        }
+
+        return isPolicyExceptionFound;
+    },
+
+    updatePolicyExceptionRequester: function(newRequester, oldRequester, busAppSysId) {
+        var grPE = new GlideRecord('sn_compliance_policy_exception');
+
+        // issue.profile.applies_to dot-walks to Entity's field that stores the sys_id of the Business Application associated with an Entity
+        var encodedQuery = 'issue.profile.applies_to=' + busAppSysId +
+            '^state=' + this.POLICY_EXCEPTION_NEW_STATE +
+            '^ORstate=' + this.POLICY_EXCEPTION_ANALYZE_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_AWAITING_APPROVAL_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_RISK_ASSESSMENT_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_REVIEW_STATE +
+            "^ORstate=" + this.POLICY_EXCEPTION_APPROVED_STATE;
+
+        grPE.addEncodedQuery(encodedQuery);
+
+        grPE.query();
+        while (grPE.next()) {
+            if (grPE.opened_by == oldRequester) {
+                grPE.opened_by = newRequester;
+                grPE.update();
+            }
+        }
+    },
+    /**********************************************************************************************************************
+     * Change history:
+     * Change ID	Name				Date		Description
+     * ALC01		Alex Leon			4/25/2024	GGRC_IROC 4329 -  Remediation Tasks Downstream update - script created
+     * ALC02		Alex Leon			4/29/2024   Opened_by change to assigned_to
+     **********************************************************************************************************************/
+    //ALC01
+
+    updateRemediationTaskRequester: function(newRequester, oldRequester, busAppSysId) {
+        var grRT = new GlideRecord('sn_grc_task');
+
+        var encodedQuery = 'issue.profile.applies_to=' + busAppSysId +
+            '^state=' + this.REMEDIATION_TASK_OPEN_STATE + //Considered an Open State
+            '^ORstate=' + this.REMEDIATION_TASK_RESPOND_STATE + //Considered an Open State
+            '^ORstate=' + this.REMEDIATION_TASK_WORK_IN_PROGRESS_STATE + //Considered an Open State
+            '^ORstate=' + this.REMEDIATION_TASK_REVIEW_STATE;
+
+
+        grRT.addEncodedQuery(encodedQuery);
+
+        grRT.query();
+
+        while (grRT.next()) {
+            if (grRT.assigned_to == oldRequester) { //ALC02 opened_by change to assigned_to
+                grRT.assigned_to = newRequester; //ALC02 opened_by change to assigned_to
+                grRT.update();
+            }
+        }
+    },
+
+    type: 'IssueUtilBase'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-13 20:40:33</sys_created_on>
+        <sys_id>df2a0e44c37b12107527961d0501319b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>IssueUtilBase</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_include_df2a0e44c37b12107527961d0501319b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-13 20:48:10</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>df2a0e44c37b12107527961d0501319b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-13 20:40:32</sys_created_on>
+        <sys_id>ecca0a80c37b12107527961d0501316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-13 20:40:32</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

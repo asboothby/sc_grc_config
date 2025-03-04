@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>grcAssessmentUtilBase</name>
+        <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[var grcAssessmentUtilBase = Class.create();
 grcAssessmentUtilBase.prototype = {
     initialize: function() {
@@ -101,6 +103,30 @@ grcAssessmentUtilBase.prototype = {
 
 	},
 
+	getExplanation: function(rmId) {
+		var grRT = new GlideRecord('sn_grc_task');
+		grRT.get(rmId);
+
+		var entityID = grRT.issue.profile;
+		var ctrl = grRT.issue.content;
+
+		var grAI = new GlideRecord('asmt_assessment_instance');
+		grAI.addQuery('sn_grc_profile',entityID);
+		grAI.addQuery('sn_grc_item.content', ctrl);
+		grAI.query();
+		grAI.next();
+		
+		var instanceID = grAI.sys_id;
+		var grAIQ = new GlideRecord('asmt_assessment_instance_question');
+		grAIQ.addQuery('instance', instanceID);
+		grAIQ.addQuery('metric', '53681152df101200dca6a5f59bf263f1');
+		grAIQ.query();
+
+		var explain = grAIQ.string_value;
+
+
+	},
+
 	importOldAsmt: function() {
 		var grBusApp = new GlideRecord('cmdb_ci_business_app');
 		var grAsmtInstance = new GlideRecord('asmt_assessment_instance');
@@ -155,13 +181,24 @@ grcAssessmentUtilBase.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-26 13:56:16</sys_created_on>
         <sys_id>646eb677971621108c6e7b771153af45</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>grcAssessmentUtilBase</sys_name>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>sys_script_include_646eb677971621108c6e7b771153af45</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-06 13:57:17</sys_updated_on>
+        <sys_updated_on>2025-02-24 22:59:17</sys_updated_on>
     </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>646eb677971621108c6e7b771153af45</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-24 22:35:47</sys_created_on>
+        <sys_id>c4aec36fc3bb12107527961d05013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-24 22:35:47</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

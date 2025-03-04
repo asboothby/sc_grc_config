@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>user,sn_grc_profile,state,take_attestation</field_list>
+        <filter/>
+        <glyph>th-list</glyph>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>3</order>
+        <order_by>metric_type</order_by>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">fa721263c3b712107527961d05013107</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 12:17:48</sys_created_on>
+        <sys_id>45fd94e0c34022107527961d050131a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Assessments</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sp_instance_table_45fd94e0c34022107527961d050131a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 12:20:00</sys_updated_on>
+        <table>asmt_assessment_instance</table>
+        <title>Assessments</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=45fd94e0c34022107527961d050131a4"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sp_instance_table_45fd94e0c34022107527961d050131a4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list>user,sn_grc_profile,state,take_attestation</field_list><filter/><glyph>th-list</glyph><id/><maximum_entries>5</maximum_entries><order>3</order><order_by>metric_type</order_by><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="3">fa721263c3b712107527961d05013107</sp_column><sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page><sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-27 12:17:48</sys_created_on><sys_id>45fd94e0c34022107527961d050131a4</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Assessments</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sp_instance_table_45fd94e0c34022107527961d050131a4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-27 12:20:00</sys_updated_on><table>asmt_assessment_instance</table><title>Assessments</title><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=45fd94e0c34022107527961d050131a4"/></record_update>]]></payload>
+        <payload_hash>2114493514</payload_hash>
+        <record_name>Assessments</record_name>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 12:20:00</sys_created_on>
+        <sys_id>d17e18e0c34022107527961d050131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195475979580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 12:20:00</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>597e18e062402210a2f4af7547719ae6</update_guid>
+        <update_guid_history>597e18e062402210a2f4af7547719ae6:2114493514,8dfd94e052402210f32238773198f4a5:-1926663324</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Assessments">2a5f1464c34022107527961d0501317a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 12:23:55</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>0007658c91b7462c8000085239897c10</sys_id>
+        <sys_metadata>45fd94e0c34022107527961d050131a4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assessments</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sp_instance_table_45fd94e0c34022107527961d050131a4</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_45fd94e0c34022107527961d050131a4">d17e18e0c34022107527961d050131e7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 12:23:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

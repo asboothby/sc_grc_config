@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_view">
+    <sys_ui_action_view action="DELETE">
+        <sys_class_name>sys_ui_action_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-24 20:03:07</sys_created_on>
+        <sys_id>6bab2623c33b12107527961d050131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WIP.Portal</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_ui_action display_value="WIP">6e9866afc3f712107527961d05013153</sys_ui_action>
+        <sys_ui_view display_value="Portal" name="portal">8629d0533530121087de279753545845</sys_ui_view>
+        <sys_update_name>sys_ui_action_view_6bab2623c33b12107527961d050131fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-24 20:03:07</sys_updated_on>
+        <visibility>include</visibility>
+    </sys_ui_action_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sys_ui_action_view_6bab2623c33b12107527961d050131fb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_view"><sys_ui_action_view action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_view</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-02-24 20:03:07</sys_created_on><sys_id>6bab2623c33b12107527961d050131fb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>WIP.Portal</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_ui_action display_value="WIP">6e9866afc3f712107527961d05013153</sys_ui_action><sys_ui_view display_value="Portal" name="portal">8629d0533530121087de279753545845</sys_ui_view><sys_update_name>sys_ui_action_view_6bab2623c33b12107527961d050131fb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-02-24 20:03:07</sys_updated_on><visibility>include</visibility></sys_ui_action_view></record_update>]]></payload>
+        <payload_hash>841909726</payload_hash>
+        <record_name>include</record_name>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-24 20:03:07</sys_created_on>
+        <sys_id>f7ab2623c33b12107527961d050131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195398e625a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-24 20:03:07</sys_updated_on>
+        <type>UI View Action</type>
+        <update_guid>fbab2623b03b1210de1978b97b2f23fe</update_guid>
+        <update_guid_history>fbab2623b03b1210de1978b97b2f23fe:841909726</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-24 20:13:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_view">sys_ui_action_view</sys_db_object>
+        <sys_id>bbb4915597164b949ac74d406f86ce10</sys_id>
+        <sys_metadata>6bab2623c33b12107527961d050131fb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WIP.Portal</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent display_value="WIP">6e9866afc3f712107527961d05013153</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_ui_action_view_6bab2623c33b12107527961d050131fb</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_view_6bab2623c33b12107527961d050131fb">f7ab2623c33b12107527961d050131ff</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-24 20:13:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

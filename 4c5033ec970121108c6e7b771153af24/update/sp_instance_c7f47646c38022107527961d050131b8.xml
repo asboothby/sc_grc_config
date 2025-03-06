@@ -6,27 +6,27 @@
         <css/>
         <glyph/>
         <id/>
-        <order>2</order>
+        <order>1</order>
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">00ba1a71c3c422107527961d050131bd</sp_column>
-        <sp_widget display_value="Surveys and Assessments">5cbb8f1053313010561cddeeff7b1272</sp_widget>
+        <sp_column display_value="1">d6e1470ac3c022107527961d05013135</sp_column>
+        <sp_widget display_value="GRC Assessment List Custom">fe9eea8ec34022107527961d050131bf</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-03 18:36:37</sys_created_on>
-        <sys_id>7c0b963dc38422107527961d050131c7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2025-03-04 15:08:34</sys_created_on>
+        <sys_id>c7f47646c38022107527961d050131b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
-        <sys_update_name>sp_instance_7c0b963dc38422107527961d050131c7</sys_update_name>
+        <sys_update_name>sp_instance_c7f47646c38022107527961d050131b8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-03 18:36:37</sys_updated_on>
+        <sys_updated_on>2025-03-04 16:05:44</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=7c0b963dc38422107527961d050131c7"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c7f47646c38022107527961d050131b8"/>
 </record_update>

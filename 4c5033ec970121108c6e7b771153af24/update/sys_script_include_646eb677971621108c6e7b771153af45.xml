@@ -174,21 +174,76 @@ grcAssessmentUtilBase.prototype = {
                         }
 		}
 	},
-	
+	getAssessments: function(type, hideGrouped) {
+        var gr = new GlideRecord('asmt_assessment_instance');
+        gr.addQuery('user', gs.getUserID());
+        gr.addEncodedQuery(this._getEncodedQuery(type), true);
+        gr.orderByDesc('sys_created_on');
+        gr.query();
+        var list = [];
+        while (gr.next()) {
+            var asmt = {};
+            asmt.sys_id = gr.sys_id + '';
+            asmt.number = gr.number + '';
+            asmt.assigned_to = gr.getDisplayValue('user');
+            asmt.metric_type_id = gr.metric_type + '';
+            asmt.metric_type = gr.getDisplayValue('metric_type');
+            asmt.due_date = gr.due_date.getDisplayValue();
+            asmt.state = gr.getDisplayValue('state');
+            asmt.state_id = gr.state + '';
+			asmt.profile = gr.getDisplayValue('sn_grc_profile');
+			asmt.control = gr.getDisplayValue('sn_grc_item');
+			if(gr.sn_grc_profile.nil)
+			{
+				asmt.grouped = true;
+			}
+			else
+			{
+				asmt.grouped = false;
+			}
+            list.push(asmt);
+        }
+        return list;
+    },
+   _getEncodedQuery: function(type) {
+        var user = gs.getUserID();
+        var query = '';
+        switch (type) {
+            case 'attestation':
+                query = 'stateNOT INcomplete,canceled^metric_type.evaluation_method=attestation_v2^sn_grc_parentISEMPTY';
+                break;
+            case 'risk':
+                query = 'stateNOT INcomplete,canceled^metric_type.evaluation_method=risk_assessment^sn_grc_itemISNOTEMPTY';
+                break;
+            case 'risk_advanced':
+                query = 'risk_identificationISNOTEMPTY^stateINready,wip';
+                break;
+            case 'tiering':
+                query = 'stateNOT INcomplete,canceled^metric_type.evaluation_method=vdr_risk_asmt^metric_type.classification=tiering_questionnaire_template';
+                break;
+            case 'all':
+                query = "stateNOT INcomplete,canceled^metric_type.evaluation_methodINattestation_v2,risk_assessment^sn_grc_itemISNOTEMPTY^userDYNAMIC" + user + "^NQrisk_identificationISNOTEMPTY^stateINready,wip^userDYNAMIC" + user;
+                break;
+            default:
+                query = 'stateNOT INcomplete,canceled^metric_type.evaluation_method=attestation_v2^sn_grc_itemISNOTEMPTY';
+        }
+        return query;
+    },
+
     type: 'grcAssessmentUtilBase'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-26 13:56:16</sys_created_on>
         <sys_id>646eb677971621108c6e7b771153af45</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>grcAssessmentUtilBase</sys_name>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>sys_script_include_646eb677971621108c6e7b771153af45</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-02-24 22:59:17</sys_updated_on>
+        <sys_updated_on>2025-03-05 22:28:24</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>646eb677971621108c6e7b771153af45</id>

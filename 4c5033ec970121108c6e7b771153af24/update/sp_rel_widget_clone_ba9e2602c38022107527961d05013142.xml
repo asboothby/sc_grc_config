@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="GRC Assessment List Custom">fe9eea8ec34022107527961d050131bf</child>
+        <cloned>2025-03-04 14:40:42</cloned>
+        <last_validated>2025-03-04 14:40:42</last_validated>
+        <parent display_value="GRC Assessment List">37ec01f4877233003058d1a936cb0be4</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, $location, spUtil) {
+	var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.alert {&amp;#13;
+    margin-top: 20px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.b {&amp;#13;
+    margin-top: 15px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-heading {&amp;#13;
+		padding: 10px 0 5px 40px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-body {&amp;#13;
+    padding: 40px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-body {&amp;#13;
+    padding: 15px;&amp;#13;
+    padding-bottom: 40px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.label.upper-case {&amp;#13;
+ 	text-transform: uppercase; &amp;#13;
+}&amp;#13;
+&amp;#13;
+.cell {&amp;#13;
+  	display: flex;&amp;#13;
+	align-items: center;&amp;#13;
+  	height: 70px;&amp;#13;
+  	padding: 0;&amp;#13;
+	overflow: hidden;&amp;#13;
+	word-break: break-word;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.row-border {&amp;#13;
+	border-bottom: 1px solid #dee5e7;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.th .cell {&amp;#13;
+	 	padding-bottom: 10px;&amp;#13;
+    align-items: flex-end; &amp;#13;
+  	height: 60px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.header .cell {&amp;#13;
+	font-weight: 700;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.contact-row:hover .cell {&amp;#13;
+  	background-color: $list-group-hover-bg;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.cell.flex-right {&amp;#13;
+ 		justify-content: flex-end; &amp;#13;
+		padding-right: 0rem;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.first-cell {&amp;#13;
+	  padding-left: 10px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+a#new_contact:hover, &amp;#13;
+a#new_contact:hover i,&amp;#13;
+.panel.vdp .contact-row a:hover{&amp;#13;
+    color: $brand-primary;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.contact-row .label.upper-case {&amp;#13;
+	  padding: .3em .6em .2em;&amp;#13;
+  	margin-left: 4px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.contact-row:hover &amp;gt; div {&amp;#13;
+    background-color: $breadcrumb-bg!important;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.label-primary,&amp;#13;
+.label-warning {&amp;#13;
+  min-width: 75px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.label-primary {&amp;#13;
+    color: $label-color;&amp;#13;
+  	background-color: $brand-success&amp;#13;
+}&amp;#13;
+&amp;#13;
+.label-warning {&amp;#13;
+    background-color: $label-warning-bg;&amp;#13;
+  	color: $label-color;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.panel-body .contact-row {&amp;#13;
+  .no-gutter &amp;gt; [class*='col-'] {&amp;#13;
+    padding-right:0;&amp;#13;
+    padding-left:0;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+&amp;#13;
+@media (max-width: 767px){&amp;#13;
+  .cell {&amp;#13;
+	height: 50px;&amp;#13;
+    border-bottom: 1px solid #dee5e7;&amp;#13;
+  }&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;grc-assessment-list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;GRC Assessment List&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var type = options.type || 'attestation'; //attestation, risk, tiering
+    var utils = new sn_grc.GRCAssessmentUtils();
+    var list = utils.getAssessments(type);
+
+    data.list = list;
+
+    var text = {};
+
+    if (type == 'attestation')
+        text = {
+            'no_result': gs.getMessage('You have no attestations.'),
+            'your_list': gs.getMessage('Your Attestations'),
+            'column_label': gs.getMessage('Attestation'),
+            'button_label': gs.getMessage('Take Attestation')
+        }
+    else if (type == 'risk')
+        text = {
+            'no_result': gs.getMessage('You have no risk assessments.'),
+            'your_list': gs.getMessage('Your Assessments'),
+            'column_label': gs.getMessage('Assessment'),
+            'button_label': gs.getMessage('Take Assessment')
+        }
+    else if (type == 'tiering')
+        text = {
+            'no_result': gs.getMessage('You have no tiering assessments.'),
+            'your_list': gs.getMessage('Your Assessments'),
+            'column_label': gs.getMessage('Assessment'),
+            'button_label': gs.getMessage('Take Assessment')
+        }
+    else if (type == 'privacy')
+        text = {
+            'no_result': gs.getMessage('You have no privacy assessments.'),
+            'your_list': gs.getMessage('Your Assessments'),
+            'column_label': gs.getMessage('Assessment'),
+            'button_label': gs.getMessage('Take Assessment')
+        }
+
+    data.text = text;
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-07-19 21:11:32&lt;/sys_created_on&gt;&lt;sys_id&gt;37ec01f4877233003058d1a936cb0be4&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name&gt;GRC Assessment List&lt;/sys_name&gt;&lt;sys_package display_value="GRC: Profiles" source="sn_grc"&gt;53f81621cb200200829cf865734c9c58&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GRC: Profiles"&gt;53f81621cb200200829cf865734c9c58&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_37ec01f4877233003058d1a936cb0be4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-06 09:36:09&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div ng-if="!data.list.length" class="alert alert-info"&gt;
+  {{data.text.no_result}}
+&lt;/div&gt;
+
+&lt;div ng-if="data.list.length" class="panel panel-{{::options.color}} b vdp"&gt;
+
+  &lt;div class="panel-heading vdp wide"&gt;
+    &lt;h4&gt;{{data.text.your_list}}&lt;/h4&gt;
+  &lt;/div&gt;
+
+  &lt;div class="panel-body vdp" role="grid" aria-readonly="true" style="padding-top: 5px;"&gt;
+
+    &lt;div class="header hidden-xs" role="row"&gt;
+      &lt;div class="col-sm-1 cell"&gt;${Number}&lt;/div&gt;
+      &lt;div class="col-sm-5 cell"&gt;{{data.text.column_label}}&lt;/div&gt;
+      &lt;div class="col-sm-3 cell"&gt;${Due Date}&lt;/div&gt;
+      &lt;div class="col-sm-1 cell"&gt;${State}&lt;/div&gt;
+      &lt;div class="col-sm-2 cell flex-right"&gt;${}&lt;/div&gt;
+      &lt;div class="col-sm-12 row-border"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div ng-repeat="asmt in data.list" class="contact-row" role="row"&gt;
+      &lt;div class="col-sm-1 cell no-gutter"&gt;
+          &lt;strong class="col-xs-4 visible-xs"&gt;${Number}&lt;/strong&gt;
+          &lt;div class="col-xs-8 col-sm-12"&gt;{{::asmt.number}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-sm-5 cell no-gutter"&gt;
+          &lt;strong class="col-xs-4 visible-xs"&gt;{{data.text.column_label}}&lt;/strong&gt;
+          &lt;div class="col-xs-8 col-sm-12"&gt;{{::asmt.metric_type}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-sm-3 cell no-gutter"&gt;
+          &lt;strong class="col-xs-4 visible-xs"&gt;${Due Date}&lt;/strong&gt;
+          &lt;div class="col-xs-8 col-sm-12"&gt;{{::asmt.due_date}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-sm-1 cell no-gutter"&gt;
+          &lt;strong class="col-xs-4 visible-xs"&gt;${State}&lt;/strong&gt;
+          &lt;div class="col-xs-8 col-sm-12"&gt;{{::asmt.state}}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-sm-2 cell flex-right"&gt;
+        &lt;div  ng-if="asmt.state_id=='ready' || asmt.state_id=='wip'"&gt;
+          &lt;a ng-href="?id=grc_take_survey&amp;instance_id={{asmt.sys_id}}&amp;type_id={{asmt.metric_type_id}}" role="button" class="button-link"&gt;
+            {{data.text.button_label}}
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-sm-12 row-border"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 14:40:42</sys_created_on>
+        <sys_id>ba9e2602c38022107527961d05013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fe9eea8ec34022107527961d050131bf</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_ba9e2602c38022107527961d05013142</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 14:40:42</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

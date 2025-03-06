@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $location, spUtil) {
+	var c = this;
+
+	
+		 $scope.selectedIds = [];
+	c.selectRecord = function(val, sys_id) {
+
+		if(val) {
+			
+			$scope.selectedIds.push(sys_id);
+		}
+		else {
+			$scope.selectedIds.pop(sys_id);
+		}
+					alert('IDs: ' + $scope.selectedIds.toString());
+
+	}
+	
+	c.groupAsmt = function() {
+		var idObj = {sys_ids: $scope.selectedIds.toString()};
+				c.server.get(idObj).then(function(resp) {
+			alert(resp.data.groupRtn.msgs.info + '  :   ' + resp.data.groupRtn.msgs.error);
+							alert('here');
+		})
+
+	}
+}
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.alert {&#13;
+    margin-top: 20px;&#13;
+}&#13;
+&#13;
+.b {&#13;
+    margin-top: 15px;&#13;
+}&#13;
+&#13;
+.panel-heading {&#13;
+		padding: 10px 0 5px 40px;&#13;
+}&#13;
+&#13;
+.panel-body {&#13;
+    padding: 40px;&#13;
+}&#13;
+&#13;
+.panel-body {&#13;
+    padding: 15px;&#13;
+    padding-bottom: 40px;&#13;
+}&#13;
+&#13;
+.label.upper-case {&#13;
+ 	text-transform: uppercase; &#13;
+}&#13;
+&#13;
+.cell {&#13;
+  	display: flex;&#13;
+	align-items: center;&#13;
+  	height: 70px;&#13;
+  	padding: 0;&#13;
+	overflow: hidden;&#13;
+	word-break: break-word;&#13;
+}&#13;
+&#13;
+.row-border {&#13;
+	border-bottom: 1px solid #dee5e7;&#13;
+}&#13;
+&#13;
+.th .cell {&#13;
+	 	padding-bottom: 10px;&#13;
+    align-items: flex-end; &#13;
+  	height: 60px;&#13;
+}&#13;
+&#13;
+.header .cell {&#13;
+	font-weight: 700;&#13;
+}&#13;
+&#13;
+.contact-row:hover .cell {&#13;
+  	background-color: $list-group-hover-bg;&#13;
+}&#13;
+&#13;
+.cell.flex-right {&#13;
+ 		justify-content: flex-end; &#13;
+		padding-right: 0rem;&#13;
+}&#13;
+&#13;
+.first-cell {&#13;
+	  padding-left: 10px;&#13;
+}&#13;
+&#13;
+a#new_contact:hover, &#13;
+a#new_contact:hover i,&#13;
+.panel.vdp .contact-row a:hover{&#13;
+    color: $brand-primary;&#13;
+}&#13;
+&#13;
+.contact-row .label.upper-case {&#13;
+	  padding: .3em .6em .2em;&#13;
+  	margin-left: 4px;&#13;
+}&#13;
+&#13;
+.contact-row:hover &gt; div {&#13;
+    background-color: $breadcrumb-bg!important;&#13;
+}&#13;
+&#13;
+.label-primary,&#13;
+.label-warning {&#13;
+  min-width: 75px;&#13;
+}&#13;
+&#13;
+.label-primary {&#13;
+    color: $label-color;&#13;
+  	background-color: $brand-success&#13;
+}&#13;
+&#13;
+.label-warning {&#13;
+    background-color: $label-warning-bg;&#13;
+  	color: $label-color;&#13;
+}&#13;
+&#13;
+.panel-body .contact-row {&#13;
+  .no-gutter &gt; [class*='col-'] {&#13;
+    padding-right:0;&#13;
+    padding-left:0;&#13;
+  }&#13;
+}&#13;
+&#13;
+@media (max-width: 767px){&#13;
+  .cell {&#13;
+	height: 50px;&#13;
+    border-bottom: 1px solid #dee5e7;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>grc_assessment_list_custom</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>GRC Assessment List Custom</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var type = options.type || 'attestation'; //attestation, risk, tiering
+    var utils = new x_631631_sc_grc_co.grcAssessmentUtilBase();
+    var list = utils.getAssessments(type);
+
+    data.list = list;
+
+    var text = {};
+
+    if (type == 'attestation')
+        text = {
+            'no_result': gs.getMessage('You have no attestations.'),
+            'your_list': gs.getMessage('My Attestations'),
+            'column_label': gs.getMessage('Attestation'),
+            'button_label': gs.getMessage('Take Attestation')
+        }
+    else if (type == 'risk')
+        text = {
+            'no_result': gs.getMessage('You have no risk assessments.'),
+            'your_list': gs.getMessage('My Assessments'),
+            'column_label': gs.getMessage('Assessment'),
+            'button_label': gs.getMessage('Take Assessment')
+        }
+    else if (type == 'tiering')
+        text = {
+            'no_result': gs.getMessage('You have no tiering assessments.'),
+            'your_list': gs.getMessage('My Assessments'),
+            'column_label': gs.getMessage('Assessment'),
+            'button_label': gs.getMessage('Take Assessment')
+        }
+    else if (type == 'privacy')
+        text = {
+            'no_result': gs.getMessage('You have no privacy assessments.'),
+            'your_list': gs.getMessage('My Assessments'),
+            'column_label': gs.getMessage('Assessment'),
+            'button_label': gs.getMessage('Take Assessment')
+        }
+
+    data.text = text;
+	
+		if(input) {
+			gs.info('input: ' + input.sys_ids);
+			data.groupRtn = recHandler(input.sys_ids);
+
+		}
+	
+	function recHandler(sys_ids) {
+		gs.info('sys_ids: ' + sys_ids)
+		var groupAsmt = new sn_grc.GRCAssessmentUtils().createGroup(sys_ids, 'grouped', 'sn_grc_profile');
+		gs.info(groupAsmt.msgs.info  + ' - ' + groupAsmt.msgs.error);
+		return groupAsmt;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 14:40:42</sys_created_on>
+        <sys_id>fe9eea8ec34022107527961d050131bf</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>GRC Assessment List Custom</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sp_widget_fe9eea8ec34022107527961d050131bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 17:26:44</sys_updated_on>
+        <template><![CDATA[<div ng-if="!data.list.length" class="alert alert-info">
+  {{data.text.no_result}}
+</div>
+
+<div ng-if="data.list.length" class="panel panel-{{::options.color}} b vdp">
+
+  <div class="panel-heading vdp wide">
+    <h4>{{data.text.your_list}}</h4>
+  </div>
+
+  <div class="panel-body vdp" role="grid" aria-readonly="true" style="padding-top: 5px;">
+
+    <div class="header hidden-xs" role="row">
+      <div class="col-sm-1 cell"></div>
+      <div class="col-sm-1 cell">${Number}</div>
+      <div class="col-sm-2 cell">{{data.text.column_label}}</div>
+      <div class="col-sm-1 cell">${Due Date}</div>
+      <div class="col-sm-1 cell">${State}</div>
+      <div class="col-sm-1 cell">${Control}</div>
+      <div class="col-sm-1 cell">${Entity}</div>
+      <div class="col-sm-2 cell flex-right">${}</div>
+      <div class="col-sm-12 row-border"></div>
+    </div>
+
+    <div ng-repeat="asmt in data.list" class="contact-row" role="row">
+      <div class="col-sm-1 cell no-gutter">
+          <strong class="col-xs-4 visible-xs">Group</strong>
+          <div class="col-xs-8 col-sm-12"><input type="checkbox" ng-model="groupbox" ng-change="c.selectRecord(groupbox, asmt.sys_id)"></div>
+      </div>
+      <div class="col-sm-1 cell no-gutter">
+          <strong class="col-xs-4 visible-xs">${Number}</strong>
+          <div class="col-xs-8 col-sm-12">{{::asmt.number}}</div>
+      </div>
+      <div class="col-sm-2 cell no-gutter">
+          <strong class="col-xs-4 visible-xs">{{data.text.column_label}}</strong>
+          <div class="col-xs-8 col-sm-12">{{::asmt.metric_type}}</div>
+      </div>
+      <div class="col-sm-1 cell no-gutter">
+          <strong class="col-xs-4 visible-xs">${Due Date}</strong>
+          <div class="col-xs-8 col-sm-12">{{::asmt.due_date}}</div>
+      </div>
+      <div class="col-sm-1 cell no-gutter">
+          <strong class="col-xs-4 visible-xs">${State}</strong>
+          <div class="col-xs-8 col-sm-12">{{::asmt.state}}</div>
+      </div>
+      <div class="col-sm-1 cell no-gutter">
+          <strong class="col-xs-4 visible-xs">${Control}</strong>
+          <div class="col-xs-8 col-sm-12">{{::asmt.control}}</div>
+      </div>
+      <div class="col-sm-1 cell no-gutter">
+          <strong class="col-xs-4 visible-xs">${Entity}</strong>
+          <div class="col-xs-8 col-sm-12">{{::asmt.profile}}</div>
+      </div>
+      <div class="col-sm-2 cell flex-right">
+        <div  ng-if="asmt.state_id=='ready' || asmt.state_id=='wip'">
+          <a ng-href="?id=grc_take_survey&instance_id={{asmt.sys_id}}&type_id={{asmt.metric_type_id}}" role="button" class="button-link">
+            {{data.text.button_label}}
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-12 row-border"></div>
+    </div>
+
+  </div>
+  <button ng-click="c.groupAsmt()">
+    Group
+  </button>
+</div>]]></template>
+    </sp_widget>
+</record_update>

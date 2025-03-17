@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">2182d2efc37712107527961d050131fb</sp_column>
+        <sp_widget display_value="Report">e41aa2d29f0222008252baac757fcfce</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 20:02:42</sys_created_on>
+        <sys_id>0b588ea4c34822107527961d05013170</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sp_instance_0b588ea4c34822107527961d05013170</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 17:56:32</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"report_id": {
+		"value": "3152a3b053cc10100b39ddeeff7b121b",
+		"displayValue": "Overdue Issues"
+	},
+	"show_title": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=0b588ea4c34822107527961d05013170"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sp_instance_0b588ea4c34822107527961d05013170</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;2182d2efc37712107527961d050131fb&lt;/sp_column&gt;&lt;sp_widget display_value="Report"&gt;e41aa2d29f0222008252baac757fcfce&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-02-27 20:02:42&lt;/sys_created_on&gt;&lt;sys_id&gt;0b588ea4c34822107527961d05013170&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co"&gt;4c5033ec970121108c6e7b771153af24&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SC GRC Config"&gt;4c5033ec970121108c6e7b771153af24&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_0b588ea4c34822107527961d05013170&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-03 17:56:32&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"report_id": {
+		"value": "3152a3b053cc10100b39ddeeff7b121b",
+		"displayValue": "Overdue Issues"
+	},
+	"show_title": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0b588ea4c34822107527961d05013170"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1404570370</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 17:56:32</sys_created_on>
+        <sys_id>b1d1d6b5c38422107527961d050131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955d2703570000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 17:56:32</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>39d1d6b5eb8422105cb4cce37949ebfe</update_guid>
+        <update_guid_history>39d1d6b5eb8422105cb4cce37949ebfe:1404570370,d6c1d6b5f2842210566b49b8867b241a:1645624417,ecc196b5bb8422101dd9f4c125721e83:1886678464,87b17a7009802210e8218c528f181d82:-1132386349,60125aa034882210de85af5060321c51:-1527542291,52315ea0da88221010ef0bcb0237002e:-1791026637,32d012605888221070519141d5e92780:-1232404746,25894628484822109e96a7eac7e2e161:-1486883320,0d298ee43848221024c87d804e49f2ff:-670169463,eff80ea4294822101298951e4218c4b6:544960471,87588ea4c448221065c2b2d23d49fc73:-329884916</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">487f01fac3c022107527961d05013131</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-06 15:40:20</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>08580f9d6cca4336858e6cd59dc3f5c9</sys_id>
+        <sys_metadata>0b588ea4c34822107527961d05013170</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sp_instance_0b588ea4c34822107527961d05013170</sys_update_name>
+        <sys_update_version display_value="sp_instance_0b588ea4c34822107527961d05013170">b1d1d6b5c38422107527961d050131ff</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-06 15:40:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

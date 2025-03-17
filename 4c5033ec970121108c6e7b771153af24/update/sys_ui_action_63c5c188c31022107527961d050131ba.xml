@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>autoGroup</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.canWrite()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Auto Group</name>
+        <onclick/>
+        <order>500</order>
+        <script><![CDATA[var metricType='';
+var groupAsmt;
+var grAsmt = new GlideRecord('asmt_assessment_instance');
+grAsmt.addQuery('sn_grc_profile', current.sys_id);
+grAsmt.orderBy('metric_type');
+grAsmt.orderByDesc('sn_grc_item.name');
+grAsmt.query();
+var sys_ids = [];
+if(grAsmt.hasNext()) {
+	grAsmt.next();
+	metricType = grAsmt.metric_type.name;
+	sys_ids.push(grAsmt.sys_id.toString());
+	gs.addInfoMessage('Ctrl: ' + grAsmt.sn_grc_item.name);
+}
+while (grAsmt.next()) {
+gs.addInfoMessage('Ctrl: ' + grAsmt.sn_grc_item.name);
+	if(metricType!=grAsmt.metric_type.name) {
+		// gs.addInfoMessage('Metric Types are different: ' + grAsmt.metric_type.name + ' - ' + metricType);
+		// gs.addInfoMessage('count: ' + sys_ids.length);
+		if (sys_ids.length > 1) {
+			groupAsmt = new sn_grc.GRCAssessmentUtils().createGroup(sys_ids.toString(), 'grouped', 'sn_grc_profile');
+			if(!groupAsmt.success) gs.addErrorMessage('Unable to create group');
+			else gs.addInfoMessage(grAsmt.msgs.info);
+			// gs.addInfoMessage(groupAsmt.msgs.error + ' - ' + groupAsmt.msgs.info);
+			metricType = grAsmt.metric_type.name;
+
+		}
+		sys_ids = [];
+
+		// gs.addInfoMessage(grAsmt.metric_type.name +  '  /  ' + metricType);
+
+	}
+	sys_ids.push(grAsmt.sys_id.toString());
+	// gs.addInfoMessage(sys_ids.toString());
+}
+		if (sys_ids.length > 1) {
+			groupAsmt = new sn_grc.GRCAssessmentUtils().createGroup(sys_ids.toString(), 'grouped', 'sn_grc_profile');
+			if(!groupAsmt.success) gs.addErrorMessage('Unable to create group');
+			else gs.addInfoMessage(grAsmt.msgs.info);
+		}
+]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-10 12:16:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>63c5c188c31022107527961d050131ba</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Auto Group</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_ui_action_63c5c188c31022107527961d050131ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-11 17:38:41</sys_updated_on>
+        <table>sn_grc_profile</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>63c5c188c31022107527961d050131ba</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-10 12:16:57</sys_created_on>
+        <sys_id>2f370948c31022107527961d05013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-10 12:16:57</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

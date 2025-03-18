@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="control_type" table="x_631631_sc_grc_co_response_type_to_control_type" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>control_type</element>
+            <name>x_631631_sc_grc_co_response_type_to_control_type</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-18 20:54:51</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>control_type</sys_name>
+            <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+            <sys_update_name>sys_choice_x_631631_sc_grc_co_response_type_to_control_type_control_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-18 20:54:51</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>control_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EndPoint</label>
+            <language>en</language>
+            <name>x_631631_sc_grc_co_response_type_to_control_type</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-18 20:54:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-18 20:54:51</sys_updated_on>
+            <value>endpoint</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>control_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Logging</label>
+            <language>en</language>
+            <name>x_631631_sc_grc_co_response_type_to_control_type</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-18 20:55:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-18 20:55:16</sys_updated_on>
+            <value>logging</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_631631_sc_grc_co.response_type_to_control_type_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>response_type_to_control_type_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-18 20:52:36</sys_created_on>
+        <sys_id>cff940b6c39822107527961d05013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_631631_sc_grc_co.response_type_to_control_type_user</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_user_role_cff940b6c39822107527961d05013130</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-18 20:52:36</sys_updated_on>
+    </sys_user_role>
+</record_update>

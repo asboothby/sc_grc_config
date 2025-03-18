@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b88908bac39822107527961d050131b6" label="Response Type to Control Type" max_length="40" name="x_631631_sc_grc_co_response_type_to_control_type" type="collection">
+        <element label="Control Objective" mandatory="true" max_length="32" name="control_objective" reference="sn_compliance_policy_statement" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Indicator Template" mandatory="true" max_length="32" name="indicator_template" reference="sn_grc_indicator_template" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Control Type" mandatory="true" max_length="40" name="control_type" type="string"/>
+        <index name="index">
+            <element name="control_objective"/>
+        </index>
+        <index name="index2">
+            <element name="indicator_template"/>
+        </index>
+    </element>
+</database>

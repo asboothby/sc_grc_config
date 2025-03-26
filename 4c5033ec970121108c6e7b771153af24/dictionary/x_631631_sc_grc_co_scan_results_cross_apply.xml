@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2ee698c9c3a822107527961d050131c0" label="Scan Results Cross Apply" max_length="40" name="x_631631_sc_grc_co_scan_results_cross_apply" type="collection">
+        <element label="FQDN Count" max_length="40" name="fqdn_count" type="integer"/>
+        <element label="Scorecard Count" max_length="40" name="scorecard_count" type="integer"/>
+        <element label="Common ID" max_length="40" name="common_id" type="integer"/>
+        <element label="Control Type" mandatory="true" max_length="100" name="control_type" type="string"/>
+        <element label="Result" max_length="40" name="result" type="boolean"/>
+        <element label="Last Scan Date" max_length="40" name="last_scan_date" type="glide_date_time"/>
+        <element label="Number Passed" max_length="40" name="number_passed" type="integer"/>
+    </element>
+</database>

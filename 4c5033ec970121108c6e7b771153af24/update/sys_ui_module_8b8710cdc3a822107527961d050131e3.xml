@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Scan Results Cross Apply">038710cdc3a822107527961d050131e0</application>
+        <filter/>
+        <name>Scan Results Cross Applies</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_631631_sc_grc_co.scan_results_cross_apply_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-25 21:38:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8b8710cdc3a822107527961d050131e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scan Results Cross Applies</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_ui_module_8b8710cdc3a822107527961d050131e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-25 21:38:11</sys_updated_on>
+        <table>x_631631_sc_grc_co_scan_results_cross_apply</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

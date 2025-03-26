@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="d60a315bc31822107527961d05013178" sys_domain="global" table="sn_grc_profile" version="3" view="indicator">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>refers_to_existing_table</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>1cad3d5fc31822107527961d050131b8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>90ad3d5fc31822107527961d050131b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>18ad3d5fc31822107527961d050131b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>9cad3d5fc31822107527961d050131b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>applies_to</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>14ad3d5fc31822107527961d050131ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>98ad3d5fc31822107527961d050131ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>owned_by</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>10ad3d5fc31822107527961d050131bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>auto_update_entity_owner</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>94ad3d5fc31822107527961d050131bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>framework</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>1cad3d5fc31822107527961d050131bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>generates_target</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>90ad3d5fc31822107527961d050131bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>18ad3d5fc31822107527961d050131bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>9cad3d5fc31822107527961d050131bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>14ad3d5fc31822107527961d050131bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>profile_class</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>98ad3d5fc31822107527961d050131bd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmn_location</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>10ad3d5fc31822107527961d050131be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmn_department</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>94ad3d5fc31822107527961d050131be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>1cad3d5fc31822107527961d050131be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>owner_field_in_source_table</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>90ad3d5fc31822107527961d050131bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>18ad3d5fc31822107527961d050131bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>19</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
+            <sys_id>9cad3d5fc31822107527961d050131bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sn_grc_profile</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-03-20 18:19:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d60a315bc31822107527961d05013178</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_grc_profile</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+            <sys_update_name>sys_ui_section_d60a315bc31822107527961d05013178</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-03-20 18:19:07</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Indicator" name="indicator">ca0a7d97c31822107527961d050131cd</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

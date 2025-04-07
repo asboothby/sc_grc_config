@@ -3,11 +3,15 @@
         <element label="Manual Control Objective" max_length="32" name="control_objective" reference="sn_compliance_policy_statement" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Indicator Template" max_length="32" name="indicator_template" reference="sn_grc_indicator_template" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Control Type" mandatory="true" max_length="40" name="control_type" type="string"/>
+        <element label="Indicator Control Objective" max_length="32" name="indicator_control_objective" reference="sn_compliance_policy_statement" reference_qual="attestationISEMPTY^EQ" reference_qual_condition="attestationISEMPTY^EQ" type="reference"/>
         <element label="Trigger Question Control Objective" max_length="32" name="trigger_question_control_objective" reference="sn_compliance_policy_statement" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <index name="index">
             <element name="control_objective"/>
         </index>
         <index name="index2">
+            <element name="indicator_control_objective"/>
+        </index>
+        <index name="index3">
             <element name="indicator_template"/>
         </index>
     </element>

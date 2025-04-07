@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_631631_sc_grc_co.grcPortalUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>grcPortalUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var grcPortalUtils = Class.create();
+grcPortalUtils.prototype = {
+    initialize: function() {
+    },
+
+	getImmediateTasks: function(filter) {
+var dateLast = new GlideDateTime();
+var dur;
+var dateStatus;
+var list=[];
+var gr = new GlideRecordSecure('planned_task');
+gr.addEncodedQuery('sys_class_name=sn_grc_issue^stateIN1,2,5^NQsys_class_name=sn_grc_task^stateIN1,2,8^NQsys_class_name=sn_compliance_policy_exception^stateIN1,2');
+// gr.addQuery('assigned_to', gs.getUserID());
+gr.addEncodedQuery(filter);
+gr.query();
+while (gr.next()) {
+	dateStatus = 'none';
+	var pTask = {};
+	if (!gr.due_date.nil()) {
+		dur = GlideDateTime.subtract (new GlideDateTime(gr.getValue ('due_date')), dateLast);
+		if(dur.getDayPart() >= 0) dateStatus = 'Overdue';
+		if(dur.getDayPart() >= -14 && dur.getDayPart() < 0) dateStatus = 'Pending';
+		
+	}
+	else {
+		dur = GlideDateTime.subtract (new GlideDateTime(gr.getValue ('sys_created_on')), dateLast);
+		if(dur.getDayPart() >=30) dateStatus = 'Not Started';
+	}
+
+	if(dateStatus != 'none') {
+		pTask.sysid = gr.sys_id +'';
+		pTask.number = gr.number + '';
+		pTask.taskType = gr.getDisplayValue('sys_class_name');
+		pTask.desc = gr.description+ '';
+		pTask.created = gr.sys_created_on + '';
+		pTask.dueDate = gr.due_date + '';
+		pTask.dateStatus = dateStatus;
+		pTask.table=gr.sys_class_name + '';
+		
+		list.push(pTask);
+	}
+
+}
+		return list;
+	},
+    type: 'grcPortalUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-27 17:28:24</sys_created_on>
+        <sys_id>6a6e25e1c3e422107527961d0501318e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>grcPortalUtils</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_include_6a6e25e1c3e422107527961d0501318e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-07 20:37:56</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6a6e25e1c3e422107527961d0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-27 17:28:23</sys_created_on>
+        <sys_id>1381bda5c3e422107527961d050131d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-27 17:28:23</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

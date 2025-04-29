@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_631631_sc_grc_co.grcAssessmentUtilBase</api_name>
         <caller_access/>
@@ -243,20 +243,27 @@ grcAssessmentUtilBase.prototype = {
         return query;
     },
 
+	canTakeAsmt: function(current) {
+		gs.addInfoMessage('From my Script Include');
+		var rtn = current.metric_type.active && (current.metric_type.evaluation_method == 'attestation_v2' || current.metric_type.evaluation_method == 'risk_assessment' || (current.isValidField('risk_identification') && current.risk_identification != '')) && current.x_631631_sc_grc_co_alternate_assignee == gs.getUserID() && (current.state == "ready" || current.state == "wip");
+		gs.addInfoMessage('rtn: ' + rtn);
+		return rtn;
+		
+	},
     type: 'grcAssessmentUtilBase'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-04-26 13:56:16</sys_created_on>
         <sys_id>646eb677971621108c6e7b771153af45</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>grcAssessmentUtilBase</sys_name>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>sys_script_include_646eb677971621108c6e7b771153af45</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-06 18:46:50</sys_updated_on>
+        <sys_updated_on>2025-04-17 19:26:59</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>646eb677971621108c6e7b771153af45</id>

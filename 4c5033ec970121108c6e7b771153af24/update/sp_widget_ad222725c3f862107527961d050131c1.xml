@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>standard</category>
-        <client_script><![CDATA[function ($scope, $location, $window, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager, i18n) {
+        <client_script><![CDATA[function ($scope, $location, $window, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager, i18n, spModal, $rootScope) {
 	var c = this;
 	/*
 	 * options:
@@ -150,8 +150,12 @@
 			return dateDueDate < dateToday;
 	}
 	
-	$scope.dateBgColor = function() {
-		return 'blue';
+	$scope.dateBgColor = function(dueDate) {
+		var rtnVal;
+		var now = new Date('2025/02/27');
+		var dateDueDate = new Date(dueDate);
+		var diff = (dateDueDate - now) /(1000*60*60*24);
+		return diff;
 	}
 
 	
@@ -231,6 +235,24 @@
 			watcher.unsubscribe();
 	});
 
+	/*-------------------------------------*/
+	$rootScope.$on('personalizationDone', function(event,data) {
+		$window.location.reload(); // refresh to new layout
+		});
+ c.personalize = function(widgetId, widgetInput) {
+	 alert('widgetid: ' + widgetId + '  widgetInput: ' + widgetInput);
+        spModal.open({
+            title: 'Personalize List Columns',
+            widget: widgetId, 
+            widgetInput: $scope.data.personalizeParms || {}
+					
+        }).then(function(){
+					$rootScope.$emit('saveChosen');
+       
+        })      
+    }
+	/*-------------------------------------*/
+	
 	$scope.setPageNum = function(num) {
 		$scope.data.p = num;
 		getData(true);
@@ -729,8 +751,6 @@ tbody tr:last-child {
 	data.msg.sortingByDesc = gs.getMessage("Sorting by descending");
 	data.searchMsg = gs.getMessage("Search");
 
-
-	
 	/*
 	 * data.table = the table
 	 * data.p = the current page starting at 1
@@ -749,8 +769,6 @@ tbody tr:last-child {
 	// copy to data[name] from input[name] || option[name]
 	optCopy(['table', 'p', 'o', 'd', 'filter', 'fixed_query', 'filterACLs', 'fields', 'keywords', 'view']);
 	optCopy(['relationship_id', 'apply_to', 'apply_to_sys_id', 'window_size']);
-	
-		gs.info('data: ' + data.table + ' - option: ' + options.table);
 	if (!data.table) {
 		data.invalid_table = true;
 		data.table_label = "";
@@ -763,11 +781,15 @@ tbody tr:last-child {
 		else
 			data.fields = $sp.getListColumns(data.table);
 	}
+
+	gs.info('table: ' + data.table + '  view: ' + data.view + '  fields: ' + data.fields);
+	//data.fields_array = CheckPreference(data.table, data.view).split(',') || data.fields.split(',');
 	
-	data.fields = data.fields + ',date_color'
-gs.info('fields: ' + data.fields);
+	var personalizeObj = {};
+	personalizeObj.table = data.table;
+	personalizeObj.view = data.view;
+	data.personalizeParms = personalizeObj;
 	
-	data.title = data.title || options.title || input.title;
 	data.view = data.view || 'mobile';
 	data.table = data.table || $sp.getValue('table');
 	data.filter = data.filter || $sp.getValue('filter');
@@ -788,8 +810,8 @@ gs.info('fields: ' + data.fields);
 		data.setOrderUserPreferences = false;
 	}
 	// if no sort specified, find a default column for UI consistency
-	if (!data.o)
-		getOrderColumn();
+//	if (!data.o)
+	//	getOrderColumn();
 	
 	data.page_index = data.p - 1;
 	data.show_new = data.show_new || options.show_new;
@@ -831,9 +853,9 @@ gs.info('fields: ' + data.fields);
 
 	data.filter = gr.getEncodedQuery();
 
-	if(!gs.nil(data.fixed_query)){
-		gr = $sp.addQueryString(gr, data.fixed_query);
-	}
+	//if(!(data.fixed_query.nil())){
+		//gr = $sp.addQueryString(gr, data.fixed_query);
+	//}
 
 	if (data.relationship_id) {
 		var rel = GlideRelationship.get(data.relationship_id);
@@ -848,7 +870,8 @@ gs.info('fields: ' + data.fields);
 		data.exportQuery += '^' + data.filter;
 	else
 		data.exportQuery = data.filter;
-	data.exportQueryEncoded = encodeURIComponent(data.exportQuery + (!gs.nil(data.fixed_query) ? ('^' + data.fixed_query) : ''));
+	//data.exportQueryEncoded = encodeURIComponent(data.exportQuery + (!JSUtil.nil(data.fixed_query) ? ('^' + data.fixed_query) : ''));
+		data.exportQueryEncoded = encodeURIComponent(data.exportQuery );
 	if (data.o){
 		if (data.d == "asc")
 			gr.orderBy(data.o);
@@ -871,16 +894,26 @@ gs.info('fields: ' + data.fields);
 	data.fields_array = data.fields.split(',');
 
 	// use GlideRecord to get field labels vs. GlideRecordSecure
-   var grForLabels = new GlideRecord(data.table);
-    for (var i in data.fields_array) {
-        var field = data.fields_array[i];
-        var ge = grForLabels.getElement(field);
-        if (ge == null)
-            continue;
+	for (var i in data.fields_array) {
+		var field = data.fields_array[i];
+		var ge = grForMetaData.getElement(field);
+		if (ge == null)
+			continue;
 
-        data.column_labels[field] = ge.getLabel();
-    }
-	//data.column_labels.date_color = 'Date Color';
+		/**
+		 * Check if the given fiels is a dot walked field.
+		 * If it is a dot walked field, we should use the getDisplayLabel() of
+		 * the CompositeElement which will internally check for the "long_label"
+		 * or "short_label" dictionary attribute and returns the label value accordingly.
+		 */
+//		var compositeElement = new GlideCompositeElement(field, data.table);
+//		if(!compositeElement.isSimple()) {
+//			data.column_labels[field] = compositeElement.getDisplayLabel();
+//		} else {
+			data.column_labels[field] = ge.getLabel();
+//		}
+		data.column_types[field] = ge.getED().getInternalType();
+	}
 
 	data.list = [];
 	while (gr._next()) {
@@ -889,10 +922,8 @@ gs.info('fields: ' + data.fields);
 		if (typeof FilteredGlideRecord != "undefined" && gr instanceof FilteredGlideRecord) {
 			// FilteredGlideRecord doesn't do field-level
 			// security, so take care of that here
-			gs.info('here');
 			for (var f in data.fields_array) {
 				var fld = data.fields_array[f];
-				gs.info('type: ' + fld.type);
 				if (!gr.isValidField(fld))
 					continue;
 
@@ -900,15 +931,8 @@ gs.info('fields: ' + data.fields);
 					record[fld].value = null;
 					record[fld].display_value = null;
 				}
-				if (fld.type === 'glide_date_time') {
-				}
-			} 
+			}
 		}
-		gs.info('date: ' + gr.due_date);
-							//record.date_color.value = 'red';
-					//record.date_color.display_value = 'red';
-
-		
 		record.sys_id = gr.getValue('sys_id');
 		record.targetTable = gr.getRecordClassName();
 		data.list.push(record);
@@ -929,12 +953,26 @@ gs.info('fields: ' + data.fields);
 			data[name] = input[name] || options[name];
 		})
 	}
+	
+	/*-----------------------------*/
+	function CheckPreference(table, view){
+	var userPref = new GlideRecord('sys_user_preference');
+		userPref.addQuery('name', table+'_'+view+'_list.view');
+		userPref.addQuery('user', gs.getUserID());
+		userPref.query();
+		if (userPref.next()) {
+return userPref.value;
+		}
+}
 
+	/*-----------------------------*/
+	
+/*
 	// getOrderColumn logic mirrors that of Desktop UI when no sort column is specified
 	function getOrderColumn() {
 		// First check for user preference
 		var pref = gs.getUser().getPreference(data.table + ".db.order");
-		if (!gs.nil(pref)) {
+		if (!pref.nil()) {
 			data.o = pref;
 			if (gs.getUser().getPreference(data.table + ".db.order.direction") == "DESC")
 				data.d = 'desc';
@@ -975,8 +1013,7 @@ gs.info('fields: ' + data.fields);
 			data.o = "number";
 		else if (grForMetaData.isValidField("name"))
 			data.o = "name";
-			
-	}
+	}*/
 	
 })();]]></script>
         <servicenow>false</servicenow>
@@ -984,14 +1021,14 @@ gs.info('fields: ' + data.fields);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-09 11:56:01</sys_created_on>
         <sys_id>ad222725c3f862107527961d050131c1</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>87</sys_mod_count>
         <sys_name>GRC Data Table</sys_name>
         <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
         <sys_policy/>
         <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
         <sys_update_name>sp_widget_ad222725c3f862107527961d050131c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-14 22:13:23</sys_updated_on>
+        <sys_updated_on>2025-04-18 13:49:00</sys_updated_on>
         <template><![CDATA[  <div class="panel panel-{{options.color}} b" ng-class="{'data-table-high-contrast': accessibilityModeEnabled}">
     <div class="panel-heading form-inline" ng-hide="options.hide_header">
       <span class="dropdown m-r-xs">
@@ -1017,6 +1054,7 @@ gs.info('fields: ' + data.fields);
       </div>
       <div class="clearfix"></div>
     </div>
+    <span class="glyphicon glyphicon-cog" ng-click="c.personalize('my-items')" aria-hidden="true"></span>
     <!-- body -->
     <div class="panel-body">
       <div ng-if="options.show_breadcrumbs && (data.filter || data.enable_filter)" class="filter-breadcrumbs">
@@ -1042,7 +1080,7 @@ gs.info('fields: ' + data.fields);
         </thead>
         <tbody>
           <tr ng-repeat="item in data.list track by item.sys_id">
-            <td role="{{$first ? 'rowheader' : 'cell'}}" class="{{item[field].type === 'glide_date_time' ? 'sp-date-cell' : 'pointer sp-list-cell'}}" ng-class="{selected: item.selected}" ng-click="go(item.targetTable, item)" ng-repeat="field in ::data.fields_array" data-field="{{::field}}" data-th="{{::data.column_labels[field]}}"><a href="javascript:void(0)" ng-if="$first" aria-label="${Open record}: {{::item[field].display_value}}"><span ng-if="item[field].type === 'user_image'"><img class="user_image" src="{{item[field].display_value}}"/></span><span ng-if="item[field].type !== 'user_image'">{{::item[field].display_value | limitTo : item[field].limit}}{{::item[field].display_value.length > item[field].limit ? '...' : ''}}</span></a><span ng-if="!$first"><span ng-if="item[field].type === 'user_image'"><img class="user_image" src="{{item[field].display_value}}"/></span><span ng-if="item[field].type==='glide_date_time' && isOverdue(item[field].display_value)" ng-style="{'background-color':dateBgColor()}">Overdue</span><span ng-if="item[field].type !== 'user_image'"> {{::item[field].display_value | limitTo : item[field].limit}}{{::item[field].display_value.length > item[field].limit ? '...' : ''}}</span></span>
+            <td role="{{$first ? 'rowheader' : 'cell'}}" class='pointer sp-list-cell' ng-class="{selected: item.selected}" ng-click="go(item.targetTable, item)" ng-repeat="field in ::data.fields_array" data-field="{{::field}}" data-th="{{::data.column_labels[field]}}"><a href="javascript:void(0)" ng-if="$first" aria-label="${Open record}: {{::item[field].display_value}}"><span ng-if="item[field].type === 'user_image'"><img class="user_image" src="{{item[field].display_value}}"/></span><span ng-if="item[field].type !== 'user_image'">{{::item[field].display_value | limitTo : item[field].limit}}{{::item[field].display_value.length > item[field].limit ? '...' : ''}}</span></a><span ng-if="!$first"><span ng-if="item[field].type === 'user_image'"><img class="user_image" src="{{item[field].display_value}}"/></span><span ng-if="item[field].type !== 'user_image'"> {{::item[field].display_value | limitTo : item[field].limit}}{{::item[field].display_value.length > item[field].limit ? '...' : ''}}</span><span ng-if="item[field].type==='glide_date_time' && dateBgColor(item[field].display_value)<=0" ng-style="{'background-color':'#fad2ce'}"> Overdue</span><span ng-if="item[field].type==='glide_date_time' && dateBgColor(item[field].display_value)> 0" ng-style="{'background-color':'#eaface'}"> Due Soon</span></span>
             </td>
           </tr>
         </tbody>

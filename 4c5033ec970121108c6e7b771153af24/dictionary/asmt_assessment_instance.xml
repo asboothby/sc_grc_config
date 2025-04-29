@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="kagami_csindex_enabled=true" db_object_id="0bbc909b35b0121087de27975354586d" label="Assessment Instance" max_length="40" name="asmt_assessment_instance" type="collection">
+        <element label="Alternate Assignee" max_length="32" name="x_631631_sc_grc_co_alternate_assignee" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+    </element>
+</database>

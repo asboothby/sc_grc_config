@@ -4,13 +4,13 @@
             <element>refers_to_existing_table</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>1cad3d5fc31822107527961d050131b8</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>ddd966bec36122107527961d050131fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>90ad3d5fc31822107527961d050131b9</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d9d966bec36122107527961d050131fe</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>.end_split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>18ad3d5fc31822107527961d050131b9</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>51d966bec36122107527961d050131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.begin_split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>9cad3d5fc31822107527961d050131b9</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d5d966bec36122107527961d050131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>applies_to</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>14ad3d5fc31822107527961d050131ba</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>5dd966bec36122107527961d050131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>name</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>98ad3d5fc31822107527961d050131ba</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d1d9a6bec36122107527961d05013100</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>owned_by</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>10ad3d5fc31822107527961d050131bb</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>59d9a6bec36122107527961d05013100</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>auto_update_entity_owner</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>94ad3d5fc31822107527961d050131bb</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>ddd9a6bec36122107527961d05013100</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>framework</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>1cad3d5fc31822107527961d050131bb</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>55d9a6bec36122107527961d05013101</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,153 +130,167 @@
             <element>generates_target</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>90ad3d5fc31822107527961d050131bc</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d9d9a6bec36122107527961d05013101</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
+            <element>attestation_frequency</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>18ad3d5fc31822107527961d050131bc</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>51d9a6bec36122107527961d05013102</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
-            <type>.split</type>
+            <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>9cad3d5fc31822107527961d050131bc</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d5d9a6bec36122107527961d05013102</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>5dd9a6bec36122107527961d05013102</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>active</element>
-            <position>12</position>
+            <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>14ad3d5fc31822107527961d050131bd</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d1d9a6bec36122107527961d05013103</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>profile_class</element>
-            <position>13</position>
+            <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>98ad3d5fc31822107527961d050131bd</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>59d9a6bec36122107527961d05013103</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cmn_location</element>
-            <position>14</position>
+            <position>15</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>10ad3d5fc31822107527961d050131be</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>ddd9a6bec36122107527961d05013103</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cmn_department</element>
-            <position>15</position>
+            <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>94ad3d5fc31822107527961d050131be</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>55d9a6bec36122107527961d05013104</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>table</element>
-            <position>16</position>
+            <position>17</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>1cad3d5fc31822107527961d050131be</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d9d9a6bec36122107527961d05013104</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>owner_field_in_source_table</element>
-            <position>17</position>
+            <position>18</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>90ad3d5fc31822107527961d050131bf</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>51d9a6bec36122107527961d05013105</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>18</position>
+            <position>19</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>18ad3d5fc31822107527961d050131bf</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>d5d9a6bec36122107527961d05013105</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>19</position>
+            <position>20</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-03-20 18:34:49</sys_created_on>
-            <sys_id>9cad3d5fc31822107527961d050131bf</sys_id>
+            <sys_created_on>2025-05-20 11:49:29</sys_created_on>
+            <sys_id>5dd9a6bec36122107527961d05013105</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="sn_grc_profile" sys_domain="global" view="ca0a7d97c31822107527961d050131cd">d60a315bc31822107527961d05013178</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-03-20 18:34:49</sys_updated_on>
+            <sys_updated_on>2025-05-20 11:49:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

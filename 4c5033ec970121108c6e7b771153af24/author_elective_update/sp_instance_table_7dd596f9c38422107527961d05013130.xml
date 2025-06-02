@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>name,applies_to,core_company,compliance_score,has_downstream_controls,owned_by</field_list>
+        <filter table="sn_grc_profile">active=true^profile_class.name=Application<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="false" field="profile_class.name" goto="false" newquery="false" operator="=" or="false" value="Application"/>
+        </filter>
+        <glyph>th-list</glyph>
+        <id/>
+        <maximum_entries>7</maximum_entries>
+        <order>4</order>
+        <order_by>name</order_by>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">e9335af5c38422107527961d05013170</sp_column>
+        <sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 18:14:01</sys_created_on>
+        <sys_id>7dd596f9c38422107527961d05013130</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>My Entities</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sp_instance_table_7dd596f9c38422107527961d05013130</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 20:55:49</sys_updated_on>
+        <table>sn_grc_profile</table>
+        <title>My Entities</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="DELETE" query="documentkey=7dd596f9c38422107527961d05013130"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sp_instance_table_7dd596f9c38422107527961d05013130</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table"><sp_instance_table action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><display_field/><field_list>name,applies_to,core_company,compliance_score,has_downstream_controls,owned_by</field_list><filter table="sn_grc_profile">active=true^profile_class.name=Application<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/><item endquery="false" field="profile_class.name" goto="false" newquery="false" operator="=" or="false" value="Application"/></filter><glyph>th-list</glyph><id/><maximum_entries>7</maximum_entries><order>4</order><order_by>name</order_by><order_direction>asc</order_direction><roles/><short_description/><size>md</size><sp_column display_value="1">e9335af5c38422107527961d05013170</sp_column><sp_page display_value="form">ed5f8ec347730200ba13a5554ee49046</sp_page><sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget><sys_class_name>sp_instance_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-03 18:14:01</sys_created_on><sys_id>7dd596f9c38422107527961d05013130</sys_id><sys_mod_count>14</sys_mod_count><sys_name>My Entities</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sp_instance_table_7dd596f9c38422107527961d05013130</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-12 20:55:49</sys_updated_on><table>sn_grc_profile</table><title>My Entities</title><url/><widget_parameters/></sp_instance_table><sys_translated_text action="delete_multiple" query="documentkey=7dd596f9c38422107527961d05013130"/></record_update>]]></payload>
+        <payload_hash>722741942</payload_hash>
+        <record_name>My Entities</record_name>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 20:55:49</sys_created_on>
+        <sys_id>122ad354c3a922107527961d050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c6484d450000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 20:55:49</sys_updated_on>
+        <type>Instance with Table</type>
+        <update_guid>962ad35485a922104a4c0ddb8840a2a6</update_guid>
+        <update_guid_history>962ad35485a922104a4c0ddb8840a2a6:722741942,071a935490a922106460f659afb97785:-1965863977,c4599314a6a92210bbcbf912d429d57a:722741942,2039dfd0bfa92210640bd856d901b9e9:-883619435,c9e85bd076a92210565a2fbba2c06639:722741942,efa817d0c6a9221048d9cfabdd012f13:-1965863977,958813d096a922109e26a35d7ccc49c2:-359502600,548813d06aa92210c871e711e6bb5d70:1246858777,be581f90d2a92210b88caf50e456c8ff:-359502600,d0490bef6af0221085d4a393668e0d8d:1246858777,ec2987237f3422101b0bb6ea8e8fa4d1:2118844949,eddb9e4419d42210a3f3ba428827eeee:-1304178512,9cca5244eed4221034f0b4b0bb610aa9:1138680089,204696f91b842210b2b6c1fb3e90461c:642398769,b5d596f9c9842210ff00fe249cdf7432:1186995640</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My Entities">c94a5754c3a922107527961d050131ea</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 20:56:16</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_table">sp_instance_table</sys_db_object>
+        <sys_id>0bd95f3e197d4fbe8aa8007ac08b5379</sys_id>
+        <sys_metadata>7dd596f9c38422107527961d05013130</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Entities</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sp_instance_table_7dd596f9c38422107527961d05013130</sys_update_name>
+        <sys_update_version display_value="sp_instance_table_7dd596f9c38422107527961d05013130">122ad354c3a922107527961d050131a7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 20:56:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

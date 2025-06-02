@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>2</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">e9335af5c38422107527961d05013170</sp_column>
+        <sp_widget display_value="GRC Header">c22a26dcc32522107527961d050131cf</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 20:49:20</sys_created_on>
+        <sys_id>27a817d0c3a922107527961d05013108</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sp_instance_27a817d0c3a922107527961d05013108</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 20:55:34</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=27a817d0c3a922107527961d05013108"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sp_instance_27a817d0c3a922107527961d05013108</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>2</order><roles/><short_description/><size>md</size><sp_column display_value="1">e9335af5c38422107527961d05013170</sp_column><sp_widget display_value="GRC Header">c22a26dcc32522107527961d050131cf</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-12 20:49:20</sys_created_on><sys_id>27a817d0c3a922107527961d05013108</sys_id><sys_mod_count>4</sys_mod_count><sys_name/><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_update_name>sp_instance_27a817d0c3a922107527961d05013108</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-12 20:55:34</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=27a817d0c3a922107527961d05013108"/></record_update>]]></payload>
+        <payload_hash>1594397637</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 20:55:34</sys_created_on>
+        <sys_id>7e1a9354c3a922107527961d0501317b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196c64814ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 20:55:34</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>f21a935457a9221015354fd34152177b</update_guid>
+        <update_guid_history>f21a935457a9221015354fd34152177b:1594397637,b7499314efa92210b7ead83676119370:-1340099420,dc39dfd06ca92210a310fb1e3d7eaede:20370819,81e85bd0a9a922100319f68fe6e76223:-1340099420,2fa817d096a922103a4f57aa502e7109:1594397637</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">454a5754c3a922107527961d050131e4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-12 20:56:16</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>5e60019ffabd4fd298c129dfa4c13d24</sys_id>
+        <sys_metadata>27a817d0c3a922107527961d05013108</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sp_instance_27a817d0c3a922107527961d05013108</sys_update_name>
+        <sys_update_version display_value="sp_instance_27a817d0c3a922107527961d05013108">7e1a9354c3a922107527961d0501317b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-12 20:56:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

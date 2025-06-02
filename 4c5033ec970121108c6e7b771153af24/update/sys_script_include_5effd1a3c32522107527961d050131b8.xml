@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_631631_sc_grc_co.separationUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>separationUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var separationUtils = Class.create();
+separationUtils.prototype = {
+    initialize: function() {
+    },
+
+	hasEntityWrite: function() {
+		var grantAccess = false;
+// gs.addInfoMessage(current.owned_by);
+
+		var grOwnergroup = new GlideRecord('sys_user_grmember');
+		grOwnergroup.addEncodedQuery('groupLIKEFin Ops^user=' + current.owned_by);
+		grOwnergroup.query();
+		if(grOwnergroup.hasNext()) {
+			grOwnergroup.next();
+			var region = grOwnergroup.group.getDisplayValue().substring(0,2);
+			// gs.addInfoMessage(region);
+			var currentUserGroup = new GlideAggregate('sys_user_grmember');
+			currentUserGroup.addAggregate('COUNT');
+			currentUserGroup.addQuery('group', grOwnergroup.group);
+			currentUserGroup.addQuery('user',gs.getUserID());
+			// currentUserGroup.addQuery('user','be82abf03710200044e0bfc8bcbe5d1c');
+			currentUserGroup.query();
+			currentUserGroup.next();
+			if(currentUserGroup.getAggregate('COUNT') > 0) return true;
+			
+		}
+		//gs.info('Has Access: ' + grantAccess);
+// gs.addInfoMessage('Has Access: ' + grantAccess);
+		return false;
+	},
+
+    type: 'separationUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:53:01</sys_created_on>
+        <sys_id>5effd1a3c32522107527961d050131b8</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>separationUtils</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_include_5effd1a3c32522107527961d050131b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 11:10:39</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5effd1a3c32522107527961d050131b8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 14:53:00</sys_created_on>
+        <sys_id>a907a123c32522107527961d05013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 14:53:00</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

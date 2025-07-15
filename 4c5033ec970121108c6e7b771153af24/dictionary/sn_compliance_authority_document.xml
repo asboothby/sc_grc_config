@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0d9e51f7c37612107527961d05013135" extends="sn_grc_document" label="Authority document" max_length="40" name="sn_compliance_authority_document" type="collection">
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Allowed Groups" max_length="4000" name="x_631631_sc_grc_co_allowed_groups" reference="sys_user_group" type="glide_list"/>
+        <element attributes="array=denormalized,no_sort=true,slushbucket_ref_no_expand=true" label="Allowed Users" max_length="4000" name="x_631631_sc_grc_co_allowed_users" reference="sys_user" type="glide_list"/>
+        <element label="Confidential" max_length="40" name="x_631631_sc_grc_co_confidential" type="boolean"/>
+        <element choice="1" label="GRC Group" max_length="100" name="x_631631_sc_grc_co_grc_group" type="string">
+            <choice>
+                <element inactive_on_update="false" label="CGRC" sequence="10" value="cgrc"/>
+                <element inactive_on_update="false" label="UK FinOps" sequence="20" value="uk_finops"/>
+            </choice>
+        </element>
+    </element>
+</database>

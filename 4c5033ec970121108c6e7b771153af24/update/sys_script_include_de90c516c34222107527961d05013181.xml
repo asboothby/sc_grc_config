@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_631631_sc_grc_co.conditionalControlsUtilsBase</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>conditionalControlsUtilsBase</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var conditionalControlsUtilsBase = Class.create();
+conditionalControlsUtilsBase.prototype = {
+    initialize: function() {
+    },
+
+GetConditionalCntrlObjs: function (entity, controlReferenece, newManagedState, systemType) {
+	
+	//Add new controls if managed
+		var managedControls = new GlideRecord('x_631631_sc_grc_co_control_decisions');
+		managedControls.addQuery('control_reference', controlReferenece);
+		managedControls.addQuery('new_manage_state', 'Managed');
+		managedControls.addQuery('system_type', 'CONTAINS', systemType);
+		managedControls.query();
+		while(managedControls.next()) {
+			if(newManagedState == 'Managed' && this.CtrlObjRefExists(entity, managedControls.control_objective)=='0') {
+				// gs.addInfoMessage('CO to Add: ' + managedControls.control_objective);
+				var contentProfileRelationship = new GlideRecord('sn_grc_m2m_content_profile');
+				if (contentProfileRelationship.canCreate()) {
+					contentProfileRelationship.setValue('sn_grc_content', managedControls.control_objective);
+					contentProfileRelationship.setValue('sn_grc_profile', entity);
+					var addResult = contentProfileRelationship.insert();
+					// gs.addInfoMessage('add result: ' + managedControls.control_objective);
+					// var addRec = new GlideRecord('sn_grc_m2m_content_profile');
+					// addRec.get(addResult);
+					// if (addRec) gs.addInfoMessage('entity: ' + addRec.entity);
+
+				}
+			}
+			else if (newManagedState=='Unmanaged') {
+				var sysId = this.CtrlObjRefExists(entity, managedControls.control_objective);
+				// gs.addInfoMessage('to be deleted: ' + sysId);
+				if (sysId!=0) {
+					var grRelate = new GlideRecord('sn_grc_m2m_content_profile');
+					// gs.addInfoMessage('before count: ' + grRelate.getRowCount());
+					grRelate.get(sysId);
+					var delResp = grRelate.deleteRecord();
+					// gs.addInfoMessage('Del Resp: ' + delResp);
+				}
+			}
+		}
+
+		var unManagedControls = new GlideRecord('x_631631_sc_grc_co_control_decisions');
+		unManagedControls.addQuery('control_reference', controlReferenece);
+		unManagedControls.addQuery('new_manage_state', 'Unmanaged');
+		unManagedControls.addQuery('system_type', 'CONTAINS', systemType);
+		unManagedControls.query();
+		while(unManagedControls.next()) {
+			// gs.addInfoMessage(newManagedState + ' - ' + unManagedControls.control_objective.name);
+			if(newManagedState == 'Unmanaged' && this.CtrlObjRefExists(entity, unManagedControls.control_objective)=='0') {
+				// gs.addInfoMessage('here');
+				contentProfileRelationship = new GlideRecord('sn_grc_m2m_content_profile');
+				if (contentProfileRelationship.canCreate()) {
+					contentProfileRelationship.setValue('sn_grc_content', unManagedControls.control_objective);
+					contentProfileRelationship.setValue('sn_grc_profile', entity);
+					contentProfileRelationship.insert();
+				}
+			}
+			else if (newManagedState=='Managed') {
+				sysId = this.CtrlObjRefExists(entity, unManagedControls.control_objective);
+				if (sysId!=0) {
+					grRelate = new GlideRecord('sn_grc_m2m_content_profile');
+					grRelate.get(sysId);
+					grRelate.deleteRecord();
+				}
+			}
+		}
+
+},
+	
+CtrlObjRefExists: function (entity, ctrlObj) {
+	var gr = new GlideRecord('sn_grc_m2m_content_profile');
+	gr.addQuery('sn_grc_content', ctrlObj);
+	gr.addQuery('sn_grc_profile', entity);
+	gr.query();
+	if(gr.hasNext()) {
+		gr.next();
+		return gr.sys_id;
+	}
+	return '0';
+
+},
+
+    type: 'conditionalControlsUtilsBase'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-12 11:36:04</sys_created_on>
+        <sys_id>de90c516c34222107527961d05013181</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>conditionalControlsUtilsBase</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_update_name>sys_script_include_de90c516c34222107527961d05013181</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-17 12:39:00</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>de90c516c34222107527961d05013181</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-12 11:36:04</sys_created_on>
+        <sys_id>9d530d96c34222107527961d0501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-12 11:36:04</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

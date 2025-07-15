@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b4e883d1c30a22107527961d050131c9" label="Control Decisions" max_length="40" name="x_631631_sc_grc_co_control_decisions" type="collection">
+        <element label="New Manage State" max_length="40" name="new_manage_state" type="string"/>
+        <element label="Control Objective" max_length="32" name="control_objective" reference="sn_compliance_policy_statement" type="reference"/>
+        <element label="Applicable Entity Types" max_length="300" name="applicable_entity_types" reference="sn_grc_profile_type" type="glide_list"/>
+        <element label="System Type" max_length="400" name="system_type" type="string"/>
+        <element label="Control Reference" max_length="40" name="control_reference" type="string"/>
+        <index name="index">
+            <element name="control_objective"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_631631_sc_grc_co_allowed_groups" label="Allowed Groups" language="en" table="sn_compliance_authority_document">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_631631_sc_grc_co_allowed_groups</element>
+            <help/>
+            <hint/>
+            <label>Allowed Groups</label>
+            <language>en</language>
+            <name>sn_compliance_authority_document</name>
+            <plural>Allowed Groups</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-06 14:38:51</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Allowed Groups</sys_name>
+            <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+            <sys_update_name>sys_documentation_sn_compliance_authority_document_x_631631_sc_grc_co_allowed_groups_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-06 14:38:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

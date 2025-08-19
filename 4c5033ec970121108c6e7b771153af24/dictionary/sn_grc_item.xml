@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.live_feed=true" db_object_id="cc7e5177c37612107527961d0501310e" label="Control/Risk" max_length="40" name="sn_grc_item" type="collection">
+        <element default="False" label="MVSP" max_length="40" name="x_631631_sc_grc_co_mvsp" read_only="true" type="boolean"/>
+    </element>
+</database>

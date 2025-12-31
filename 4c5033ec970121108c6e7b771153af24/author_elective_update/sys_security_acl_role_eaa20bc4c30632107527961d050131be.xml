@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-21 17:19:43</sys_created_on>
+        <sys_id>eaa20bc4c30632107527961d050131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_assessment_instance_question.impersonator</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_security_acl display_value="asmt_assessment_instance_question">499ff6c4c30632107527961d05013176</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_eaa20bc4c30632107527961d050131be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-21 17:19:43</sys_updated_on>
+        <sys_user_role display_value="impersonator" name="impersonator">bca873d30a000704013944bd9a5e03a4</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</application>
+        <file_path/>
+        <instance_id>fa178b1a1b028a94e84d2f8dee4bcb13</instance_id>
+        <instance_name>dev267381</instance_name>
+        <name>sys_security_acl_role_eaa20bc4c30632107527961d050131be</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-12-21 17:19:43</sys_created_on><sys_id>eaa20bc4c30632107527961d050131be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>asmt_assessment_instance_question.impersonator</sys_name><sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package><sys_policy/><sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope><sys_security_acl display_value="asmt_assessment_instance_question">499ff6c4c30632107527961d05013176</sys_security_acl><sys_update_name>sys_security_acl_role_eaa20bc4c30632107527961d050131be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-12-21 17:19:43</sys_updated_on><sys_user_role display_value="impersonator" name="impersonator">bca873d30a000704013944bd9a5e03a4</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-639528854</payload_hash>
+        <record_name>asmt_assessment_instance_question.impersonator</record_name>
+        <reverted_from/>
+        <source>13172e73c3be12107527961d050131c0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-21 17:19:43</sys_created_on>
+        <sys_id>5333c3ccc30632107527961d05013161</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19b41ec9b510000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-21 17:19:43</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>1333c3ccf10632106da93bdc0ebd7560</update_guid>
+        <update_guid_history>1333c3ccf10632106da93bdc0ebd7560:-639528854</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="asmt_assessment_instance_question.impersonator">f5094b90c386b2107527961d050131e4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-12-22 12:23:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>08dd7bf537594e508078dd7ce85889f9</sys_id>
+        <sys_metadata>eaa20bc4c30632107527961d050131be</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>asmt_assessment_instance_question.impersonator</sys_name>
+        <sys_package display_value="SC GRC Config" source="x_631631_sc_grc_co">4c5033ec970121108c6e7b771153af24</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SC GRC Config">4c5033ec970121108c6e7b771153af24</sys_scope>
+        <sys_scope_delete display_value="">5f51304f0da64f40acf68d46b4663fe1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_eaa20bc4c30632107527961d050131be</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_eaa20bc4c30632107527961d050131be">5333c3ccc30632107527961d05013161</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-12-22 12:23:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
